@@ -39,6 +39,11 @@ Smrita Rani Borah, Payal Jain, and other designers or artists named Jain. Unrela
    `note` (price, format, registration deadline). Exhibitions use `cats` `["art", ...]`
    and a `kind` containing "Exhibition" so they also appear under Art & exhibitions.
    Paintings or series to feature as cards on the home page get `home_art` (order).
+   New courses, badges and certificates go in `cats` `["certifications", ...]` with the
+   verification link as `url`; they appear in the home page's Certifications section.
+   LinkedIn needs a sign-in, so SJ can't read it on scheduled runs: check Credly,
+   credential.net and other public badge pages, and in the report ask Smrita to mention
+   any new LinkedIn certification so it can be added.
 5. **Write the entry** (fields: `id`, `cats`, `title`, `source`, `kind`, `date`, `url`,
    `summary`, `status`, `via`). Rules:
    - `summary`: one factual sentence in SJ's own words. No praise, no adjectives the
