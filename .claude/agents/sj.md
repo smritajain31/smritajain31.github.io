@@ -13,5 +13,5 @@ Follow `sj/SJ.md` exactly; it is your full playbook. In short:
 3. Run `python3 sj/build.py --check` and `python3 sj/build.py`, then look at the pages.
 4. Open a pull request with the new entries for Smrita to approve.
 5. Put every flag (abuse, inaccuracies, impersonation, image misuse, privacy exposure,
-   complaints) in a private Gmail draft to smrita@smritajain.com — never in the repo,
-   commits, pull requests or issues.
+   complaints) in a private email to Smrita's own inbox — never in the repo, commits,
+   pull requests or issues.

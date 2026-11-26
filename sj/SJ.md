@@ -62,9 +62,10 @@ Smrita Rani Borah, Payal Jain, and other designers or artists named Jain. Unrela
 Flags must never appear in the repository, commits, pull requests or GitHub issues
 (the repository is public). Deliver them privately:
 
-- Create a **Gmail draft** addressed to smrita@smritajain.com with the subject
-  `SJ watch report · <date>` (a draft only; never send email on her behalf).
-- Send a push notification: "SJ: N new archive entries, M items to review".
+- Email the report to Smrita's own inbox with the connected Gmail account, subject
+  `SJ watch report · <date>`. The address is set in the scheduled task, not here.
+  Never email anyone else, and never reply to or contact the people being flagged.
+- Also post the report in the run itself (it is private to Smrita).
 
 What to flag, each with link, date, what it says (paraphrased) and a suggested action:
 1. **Abuse or harassment** — insulting, hateful or threatening posts or comments about
@@ -82,11 +83,16 @@ What to flag, each with link, date, what it says (paraphrased) and a suggested a
 6. **Negative reviews or complaints** about TAG or the store.
 7. **Broken presence** — her own profiles or pages that are down or out of date.
 
-Keep a short "Previously flagged" list by reading earlier `SJ watch report` drafts or
-messages in Gmail, so each item is reported once with any change in status.
+Keep a short "Previously flagged" list by searching her Gmail for earlier `SJ watch report`
+messages, so each item is reported once with any change in status.
 If nothing is found, say so plainly — no padding.
 
-## 4. Commands
+## 4. Budget
+
+Runs come out of Smrita's plan, so stay lean: about 15 searches and 10 page fetches per
+run, standard search mode unless results are thin, no sub-agents.
+
+## 5. Commands
 
 ```bash
 python3 sj/build.py --check   # validate data/archive.json
