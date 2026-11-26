@@ -344,7 +344,8 @@ def render_home_upcoming(data, today):
             f'<p>{esc(e["summary"])}</p>'
             + (f'<div class="up-about"><strong>What we’ll cover</strong><ul>{about}</ul></div>' if about else "")
             + (f'<p class="up-note">{esc(e["note"])}</p>' if e.get("note") else "")
-            + cta + "</div></article>")
+            + cta + "".join(f' <a class="up-more" href="{esc(l['url'])}" rel="noopener">{esc(l['label'])} ↗</a>' for l in e.get("links", []))
+            + "</div></article>")
     return head + "".join(cards) + "</section>"
 
 
