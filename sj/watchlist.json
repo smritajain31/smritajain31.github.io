@@ -1,0 +1,45 @@
+{
+  "archive_queries": [
+    "\"Smrita Jain\"",
+    "\"Smrita Jain\" designer",
+    "\"Smrita Jain\" artist",
+    "\"Smrita Jain\" interview",
+    "\"Smrita Jain\" podcast OR webinar OR workshop OR panel",
+    "\"Smrita Jain\" speaker OR keynote OR talk",
+    "\"Smrita Jain\" agentic AI",
+    "\"Smrita Jain\" Pratt",
+    "\"Smrita Jain\" Harvard Data Science Initiative",
+    "\"Smrita Jain\" award",
+    "\"Smrita Jain\" exhibition",
+    "\"Smrita Jain\" Brainz Magazine",
+    "\"Creating Durga\"",
+    "\"Fat Free Samosa\"",
+    "\"The Aquario Group\"",
+    "\"Aquario Group\" Brooklyn",
+    "\"TAG Studio Store\" OR \"store.theaquariogroup.com\"",
+    "\"Surmrit Gallery\"",
+    "\"Elite Styles Fashion\"",
+    "site:youtube.com \"Smrita Jain\"",
+    "site:linkedin.com/pulse \"Smrita Jain\"",
+    "site:medium.com \"Smrita Jain\""
+  ],
+  "watch_queries": [
+    "\"Smrita Jain\" scam OR fraud OR fake OR complaint",
+    "\"Aquario Group\" scam OR complaint OR review",
+    "\"Smrita Jain\" reddit",
+    "\"Smrita Jain\" phone OR address",
+    "\"Smrita Jain\" instagram -aquariogroup",
+    "\"Aquario Group\" -theaquariogroup.com",
+    "\"Smrita Jain\" images",
+    "\"Creating Durga\" photograph -creatingdurga.com"
+  ],
+  "own_pages_to_scan": [
+    "https://ai.smritajaindesign.com/",
+    "https://www.theaquariogroup.com/",
+    "https://www.smritajainart.com/selected-cv",
+    "https://www.brainzmagazine.com/executive-contributor/smrita-jain",
+    "https://store.theaquariogroup.com/",
+    "https://en.wikipedia.org/wiki/Smrita_Jain",
+    "https://www.pratt.edu/people/smrita-jain/"
+  ]
+}
