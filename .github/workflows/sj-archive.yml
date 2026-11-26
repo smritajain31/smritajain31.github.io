@@ -1,0 +1,49 @@
+name: SJ archive upkeep
+
+on:
+  push:
+    branches: [main]
+    paths: ["data/**", "sj/**", "index.html", "archive/**"]
+  pull_request:
+    paths: ["data/**", "sj/**"]
+  schedule:
+    - cron: "23 14 * * 1"   # every Monday: re-check every link, roll past events out of "Upcoming"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sj-archive
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Validate archive data
+        run: python3 sj/build.py --check
+
+  upkeep:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Check links
+        run: python3 sj/check_links.py
+      - name: Rebuild pages
+        run: python3 sj/build.py
+      - name: Commit if anything changed
+        run: |
+          if git diff --quiet; then echo "No changes"; exit 0; fi
+          git config user.name "SJ"
+          git config user.email "smritajain31@users.noreply.github.com"
+          git add data/link-status.json archive/index.html index.html
+          git commit -m "SJ: weekly link check and refresh"
+          git push
