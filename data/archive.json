@@ -82,11 +82,6 @@
    "eyebrow": "Always learning"
   },
   {
-   "id": "certifications",
-   "label": "Certifications",
-   "eyebrow": "Credentials"
-  },
-  {
    "id": "awards",
    "label": "Awards & recognition",
    "eyebrow": "Recognition"
@@ -723,122 +718,6 @@
    "summary": "Full case studies in agentic AI, product and experience design.",
    "status": "verified",
    "via": "Own site"
-  },
-  {
-   "id": "hdsi-cert",
-   "cats": [
-    "certifications",
-    "ai",
-    "education"
-   ],
-   "title": "Harvard Data Science Initiative Agentic AI Certification",
-   "source": "Harvard Data Science Initiative",
-   "kind": "Certification · In progress, potential completion Dec 2026",
-   "date": "2026-11",
-   "summary": "Intensive agentic AI program (November 2026 cohort); in progress.",
-   "status": "own-site",
-   "via": "smritajain31.github.io"
-  },
-  {
-   "id": "cert-genai-pm",
-   "cats": [
-    "certifications",
-    "ai"
-   ],
-   "title": "Generative AI for Product Managers",
-   "source": "LinkedIn Learning",
-   "kind": "Certificate",
-   "date": "2026-04",
-   "url": "https://www.linkedin.com/learning/certificates/5670730699b64076f5ad3eaf2d2d4ea6609fde62a3bb275345fcb7c1203328e3/",
-   "summary": "Course certificate covering AI for business analysis and product management.",
-   "status": "verified",
-   "via": "LinkedIn Licenses & certifications"
-  },
-  {
-   "id": "cert-elvtr-gaming",
-   "cats": [
-    "certifications"
-   ],
-   "title": "UX/UI for Gaming",
-   "source": "ELVTR",
-   "kind": "Certificate",
-   "date": "2024-01",
-   "url": "https://elvtr.com/certificate/f1f1f14ffc5242a192e36e439fcc8246/",
-   "summary": "Course in game UX, UI and game design.",
-   "status": "verified",
-   "via": "LinkedIn Licenses & certifications"
-  },
-  {
-   "id": "cert-uxdi",
-   "cats": [
-    "certifications"
-   ],
-   "title": "Professional Diploma in UX Design",
-   "source": "UX Design Institute (Glasgow Caledonian University)",
-   "kind": "Diploma · credential ID 23087013",
-   "date": "2021-07",
-   "url": "https://www.credential.net/42add348-d804-4818-974d-d5ac6b40e8cb",
-   "summary": "Professional diploma in UX design.",
-   "status": "verified",
-   "via": "LinkedIn Licenses & certifications"
-  },
-  {
-   "id": "cert-ibm-cocreator",
-   "cats": [
-    "certifications"
-   ],
-   "title": "Enterprise Design Thinking Co-Creator",
-   "source": "IBM",
-   "kind": "Badge",
-   "date": "2020-11",
-   "url": "https://www.youracclaim.com/badges/65abcbcb-61af-44b6-8602-99b7acad1187",
-   "summary": "IBM's design thinking badge for leading co-creation with teams.",
-   "status": "verified",
-   "via": "LinkedIn Licenses & certifications"
-  },
-  {
-   "id": "cert-ibm-practitioner",
-   "cats": [
-    "certifications"
-   ],
-   "title": "Enterprise Design Thinking Practitioner",
-   "source": "IBM",
-   "kind": "Badge",
-   "date": "2020-11",
-   "url": "https://www.youracclaim.com/badges/986bc84b-6106-4bfe-9b9f-5088bfe813f5",
-   "summary": "IBM's foundational design thinking badge.",
-   "status": "verified",
-   "via": "LinkedIn Licenses & certifications"
-  },
-  {
-   "id": "cert-sketch-svg",
-   "cats": [
-    "certifications",
-    "design"
-   ],
-   "title": "Sketch: Creating Responsive SVG",
-   "source": "LinkedIn Learning",
-   "kind": "Certificate",
-   "date": "2020-10",
-   "url": "https://www.linkedin.com/learning/certificates/07aeb775af39d7d2481c904a25f43fa435f873a0a1b58cddd44b6ed9163b0a99/",
-   "summary": "Course certificate in responsive SVG with Sketch.",
-   "status": "verified",
-   "via": "LinkedIn Licenses & certifications"
-  },
-  {
-   "id": "cert-sketch-ds",
-   "cats": [
-    "certifications",
-    "design"
-   ],
-   "title": "Creating a Design System with Sketch",
-   "source": "LinkedIn Learning",
-   "kind": "Certificate",
-   "date": "2020-10",
-   "url": "https://www.linkedin.com/learning/certificates/be493d89f8e3231c1203fd8291c24de4a91dd9ef259fa74fda8e46ed7bd8f6b8/",
-   "summary": "Course certificate in building a design system.",
-   "status": "verified",
-   "via": "LinkedIn Licenses & certifications"
   },
   {
    "id": "cs-advocate",

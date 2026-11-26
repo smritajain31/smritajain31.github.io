@@ -39,8 +39,9 @@ Smrita Rani Borah, Payal Jain, and other designers or artists named Jain. Unrela
    `note` (price, format, registration deadline). Exhibitions use `cats` `["art", ...]`
    and a `kind` containing "Exhibition" so they also appear under Art & exhibitions.
    Paintings or series to feature as cards on the home page get `home_art` (order).
-   New courses, badges and certificates go in `cats` `["certifications", ...]` with the
-   verification link as `url`; they appear in the home page's Certifications section.
+   New courses, badges and certificates do NOT go in the archive: add them to
+   `data/certifications.json` (title, source, kind, date, verification `url`); they appear
+   only in the home page's Certifications section.
    LinkedIn needs a sign-in, so SJ can't read it on scheduled runs: check Credly,
    credential.net and other public badge pages, and in the report ask Smrita to mention
    any new LinkedIn certification so it can be added.

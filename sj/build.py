@@ -22,6 +22,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "archive.json"
 LINKS = ROOT / "data" / "link-status.json"
+CERTS = ROOT / "data" / "certifications.json"
 HOME = ROOT / "index.html"
 OUT = ROOT / "archive" / "index.html"
 
@@ -230,7 +231,7 @@ def render_archive(data, links, base_css, today):
 <a class="side-name" href="../">SMRITA JAIN</a>
 <img class="side-portrait" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Smrita-jain.jpg" alt="Smrita Jain" draggable="false" oncontextmenu="return false">
 <details class="side-menu" open><summary>Explore the archive <span aria-hidden="true">☰</span></summary>
-<nav class="side-links" aria-label="Archive sections"><a href="../">← Home</a><a href="#top">Overview</a>{'<a href="#upcoming">Upcoming</a>' if upcoming else ''}{side}</nav></details>
+<nav class="side-links" aria-label="Archive sections"><a href="../">← Home</a><a href="#top">Overview</a>{'<a href="#upcoming">Upcoming</a>' if upcoming else ''}{side}<a href="../#certifications">Certifications</a></nav></details>
 </aside>
 <main id="top">
 <div class="wrap">
@@ -389,8 +390,7 @@ def small_arrows(text):
     return re.sub(r"↗(?![^<]*>)", ARROW, text)
 
 
-def render_home_certs(data):
-    certs = [e for e in data["entries"] if e["cats"][0] == "certifications"]
+def render_home_certs(certs):
     prog = [e for e in certs if "in progress" in (e.get("kind") or "").lower()]
     done = sorted([e for e in certs if e not in prog], key=sort_key, reverse=True)
 
@@ -406,7 +406,7 @@ def render_home_certs(data):
     return ('<section class="section" id="certifications"><div class="eyebrow">Credentials</div>'
             '<h2>Certifications <span class="emoji" aria-hidden="true">📜</span></h2>'
             f'<div class="rows">{"".join(row(e) for e in prog + done)}</div>'
-            '<p><a href="archive/#certifications">All certifications in the archive ↗</a></p></section>')
+            '</section>')
 
 
 def replace_block(text, name, new):
@@ -436,7 +436,8 @@ def main():
     OUT.write_text(small_arrows(render_archive(data, links, base_css, today)))
     home = replace_block(home, "upcoming", render_home_upcoming(data, today))
     home = replace_block(home, "art", render_home_art(data))
-    home = replace_block(home, "certs", render_home_certs(data))
+    certs = json.loads(CERTS.read_text())["certifications"] if CERTS.exists() else []
+    home = replace_block(home, "certs", render_home_certs(certs))
     home = replace_block(home, "talks", render_home_talks(data, links, today))
     home = replace_block(home, "count", f'{len(data["entries"])} entries')
     HOME.write_text(small_arrows(home))
