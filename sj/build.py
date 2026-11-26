@@ -378,6 +378,16 @@ def render_home_art(data):
         "</div></section>")
 
 
+ARROW = '<span class="ext" aria-hidden="true">↗</span>'
+ARROW_CSS = ".ext{display:inline-block;font:500 .62em/1 Inter,Arial,sans-serif;margin-left:.2em;vertical-align:.32em;text-decoration:none}"
+
+
+def small_arrows(text):
+    """Every external-link arrow becomes a small, consistent glyph (never inside attributes)."""
+    text = text.replace(ARROW, "↗").replace('<span aria-hidden="true">↗</span>', "↗")
+    return re.sub(r"↗(?![^<]*>)", ARROW, text)
+
+
 def replace_block(text, name, new):
     pat = re.compile(rf"(<!-- SJ:{name}:start -->)(.*?)(<!-- SJ:{name}:end -->)", re.S)
     if not pat.search(text):
@@ -399,12 +409,15 @@ def main():
     home = HOME.read_text()
     base_css = re.search(r"<style>(.*?)</style>", home, re.S).group(1)
     OUT.parent.mkdir(exist_ok=True)
-    OUT.write_text(render_archive(data, links, base_css, today))
+    if ".ext{" not in base_css:
+        home = home.replace("</style>", ARROW_CSS + "</style>", 1)
+        base_css += ARROW_CSS
+    OUT.write_text(small_arrows(render_archive(data, links, base_css, today)))
     home = replace_block(home, "upcoming", render_home_upcoming(data, today))
     home = replace_block(home, "art", render_home_art(data))
     home = replace_block(home, "talks", render_home_talks(data, links, today))
     home = replace_block(home, "count", f'{len(data["entries"])} entries')
-    HOME.write_text(home)
+    HOME.write_text(small_arrows(home))
     print(f"Built archive/index.html with {len(data['entries'])} entries; homepage blocks refreshed")
 
 
