@@ -389,6 +389,26 @@ def small_arrows(text):
     return re.sub(r"↗(?![^<]*>)", ARROW, text)
 
 
+def render_home_certs(data):
+    certs = [e for e in data["entries"] if e["cats"][0] == "certifications"]
+    prog = [e for e in certs if "in progress" in (e.get("kind") or "").lower()]
+    done = sorted([e for e in certs if e not in prog], key=sort_key, reverse=True)
+
+    def row(e):
+        if e in prog:
+            meta = f'{esc(e["source"])} · {esc(e["kind"].split(" · ", 1)[-1])}'
+        else:
+            meta = f'{esc(e["source"])} · {esc(fmt_date(e.get("date")))}'
+            if e.get("url"):
+                meta += f' · <a href="{esc(e["url"])}" rel="noopener">Verify ↗</a>'
+        return f'<div class="row"><strong>{esc(e["title"])}</strong><span>{meta}</span></div>'
+
+    return ('<section class="section" id="certifications"><div class="eyebrow">Credentials</div>'
+            '<h2>Certifications <span class="emoji" aria-hidden="true">📜</span></h2>'
+            f'<div class="rows">{"".join(row(e) for e in prog + done)}</div>'
+            '<p><a href="archive/#certifications">All certifications in the archive ↗</a></p></section>')
+
+
 def replace_block(text, name, new):
     pat = re.compile(rf"(<!-- SJ:{name}:start -->)(.*?)(<!-- SJ:{name}:end -->)", re.S)
     if not pat.search(text):
@@ -416,6 +436,7 @@ def main():
     OUT.write_text(small_arrows(render_archive(data, links, base_css, today)))
     home = replace_block(home, "upcoming", render_home_upcoming(data, today))
     home = replace_block(home, "art", render_home_art(data))
+    home = replace_block(home, "certs", render_home_certs(data))
     home = replace_block(home, "talks", render_home_talks(data, links, today))
     home = replace_block(home, "count", f'{len(data["entries"])} entries')
     HOME.write_text(small_arrows(home))
