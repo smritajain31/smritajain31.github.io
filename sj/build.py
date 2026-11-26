@@ -100,12 +100,7 @@ def entry_html(e, links, today, show_cats=True, cat_labels=None):
     badges = []
     if is_upcoming(e, today):
         badges.append('<span class="badge up">Upcoming</span>')
-    st = e["status"]
-    badges.append({
-        "verified": '<span class="badge ok" title="SJ opened this source and confirmed it">Verified</span>',
-        "own-site": '<span class="badge own" title="Stated on Smrita’s own sites">Own site</span>',
-        "cited": '<span class="badge cite" title="Listed on her CV or Wikipedia; original not yet re-checked">Cited</span>',
-    }[st])
+    badges.append(badge(e["status"], url))
     extra = []
     if e.get("cta") and url and is_upcoming(e, today):
         extra.append(f'<a class="cta" href="{esc(url)}" rel="noopener">{esc(e["cta"])} ↗</a>')
@@ -145,7 +140,6 @@ ARCHIVE_CSS = """
 .when{font-size:13px;color:#675a62;font-weight:600;padding-top:3px}.what h3{font-size:19px;margin:0 0 3px}.what h3 a{text-decoration:none;color:var(--ink)}.what h3 a:hover{color:#9b0759;text-decoration:underline}
 .meta{font-size:13px;color:#9a0c5c;font-weight:600}.what p{margin:6px 0 8px;font-size:15px}
 .foot{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:13px}
-.badge{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:4px}.badge.ok{background:#e9f6ee;color:#1d6b3a}.badge.own{background:#fff1f7;color:#8e004d}.badge.cite{background:#f3f0f2;color:#5d5258}.badge.up{background:var(--pink);color:#fff}
 .cta{background:var(--pink);color:#fff!important;text-decoration:none;padding:6px 12px;border-radius:5px;font-weight:600}.cta:hover{background:#b0106c}
 .also{color:#766a70}
 .upnext{border:1px solid #f2b6d4;background:var(--pale);padding:20px 22px;margin:26px 0 0}.upnext .entries .entry{border-top:0;padding:6px 0}
@@ -381,14 +375,43 @@ def render_home_art(data):
         "</div></section>")
 
 
-ARROW = '<span class="ext" aria-hidden="true">↗</span>'
-ARROW_CSS = ".ext{display:inline-block;font:500 .62em/1 Inter,Arial,sans-serif;margin-left:.2em;vertical-align:.32em;text-decoration:none}"
+ARROW = ('<span class="ext" aria-hidden="true"><svg viewBox="0 0 10 10" width="10" height="10">'
+         '<path d="M2.2 7.8 7.8 2.2M3.6 2.2h4.2v4.2" fill="none" stroke="currentColor" stroke-width="1.6" '
+         'stroke-linecap="round" stroke-linejoin="round"/></svg></span>')
+# One style for every external-link arrow and every source badge, on every page.
+SHARED_CSS = ("/*sj*/.ext{display:inline-block;width:10px;height:10px;margin-left:5px;line-height:0;vertical-align:.08em;text-decoration:none}"
+              ".ext svg{display:block}.row .ext,.ext{color:inherit}"
+              ".badge-link{text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center}"
+              ".badge-link:hover .badge{filter:brightness(.94)}"
+              ".badge{display:inline-block;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:4px;line-height:1.3}"
+              ".badge.ok,.badge.own,.badge.cite,.badge.up{font:700 11px/1.3 Inter,Arial,sans-serif}"
+              ".badge.ok{background:#e9f6ee;color:#1d6b3a}.badge.own{background:#fff1f7;color:#8e004d}"
+              ".badge.cite{background:#f3f0f2;color:#5d5258}.badge.up{background:var(--pink);color:#fff}/*/sj*/")
+
+
+def badge(status, url=None):
+    label, cls, tip = {
+        "verified": ("Verified", "ok", "SJ opened this source and confirmed it"),
+        "own-site": ("Own site", "own", "Stated on Smrita’s own sites"),
+        "cited": ("Cited", "cite", "Listed on her CV or Wikipedia; original not yet re-checked"),
+    }[status]
+    b = f'<span class="badge {cls}" title="{tip}">{label}</span>'
+    return f'<a class="badge-link" href="{esc(url)}" rel="noopener">{b}↗</a>' if url else b
 
 
 def small_arrows(text):
     """Every external-link arrow becomes a small, consistent glyph (never inside attributes)."""
     text = text.replace(ARROW, "↗").replace('<span aria-hidden="true">↗</span>', "↗")
-    return re.sub(r"↗(?![^<]*>)", ARROW, text)
+    text = re.sub(r'<span class="ext" aria-hidden="true">↗</span>', "↗", text)
+    text = re.sub(r"[ \u00a0]*↗(?![^<]*>)", ARROW, text)
+
+    # The arrow means "opens another site": drop it from links within this site.
+    def internal(m):
+        a = m.group(0)
+        if not re.match(r'https?://', m.group(1)):
+            return a.replace(ARROW, "")
+        return a if ARROW in a else a[:-4] + ARROW + "</a>"  # every outside link gets the arrow
+    return re.sub(r'<a\b[^>]*?href="([^"]*)"[^>]*>.*?</a>', internal, text, flags=re.S)
 
 
 def render_home_certs(certs):
@@ -400,8 +423,7 @@ def render_home_certs(certs):
             meta = f'{esc(e["source"])} · {esc(e["kind"].split(" · ", 1)[-1])}'
         else:
             meta = f'{esc(e["source"])} · {esc(fmt_date(e.get("date")))}'
-            if e.get("url"):
-                meta += f' · <a href="{esc(e["url"])}" rel="noopener">Verify ↗</a>'
+            meta += ' · ' + badge(e.get("status", "verified"), e.get("url"))
         return f'<div class="row"><strong>{esc(e["title"])}</strong><span>{meta}</span></div>'
 
     return ('<section class="section" id="certifications"><div class="eyebrow">Credentials</div>'
@@ -431,9 +453,10 @@ def main():
     home = HOME.read_text()
     base_css = re.search(r"<style>(.*?)</style>", home, re.S).group(1)
     OUT.parent.mkdir(exist_ok=True)
-    if ".ext{" not in base_css:
-        home = home.replace("</style>", ARROW_CSS + "</style>", 1)
-        base_css += ARROW_CSS
+    home = re.sub(r"\.ext\{display:inline-block;font:[^}]*\}", "", home)
+    home = re.sub(r"/\*sj\*/.*?/\*/sj\*/", "", home, flags=re.S)
+    home = home.replace("</style>", SHARED_CSS + "</style>", 1)
+    base_css = re.search(r"<style>(.*?)</style>", home, re.S).group(1)
     OUT.write_text(small_arrows(render_archive(data, links, base_css, today)))
     home = replace_block(home, "upcoming", render_home_upcoming(data, today))
     home = replace_block(home, "art", render_home_art(data))
