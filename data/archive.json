@@ -1,160 +1,1780 @@
 {
-  "subject": {
-    "name": "Smrita Jain",
-    "company": "The Aquario Group (TAG)",
-    "based_in": "New York City (Brooklyn)",
-    "known_for": ["Product & experience design", "Agentic AI design", "Art & photography", "Writing", "Design education"],
-    "websites": [
-      {"label": "AI & product design portfolio", "url": "https://ai.smritajaindesign.com/"},
-      {"label": "The Aquario Group", "url": "https://www.theaquariogroup.com/"},
-      {"label": "Art", "url": "https://www.smritajainart.com/"},
-      {"label": "TAG Studio Store", "url": "https://store.theaquariogroup.com/"}
-    ]
-  },
-  "updated": "2026-11-26",
-  "categories": [
-    {"id": "talks", "label": "Talks, shows & workshops", "eyebrow": "On stage, on air, on Zoom"},
-    {"id": "press", "label": "Press, features & interviews", "eyebrow": "Stories & conversations"},
-    {"id": "writing", "label": "Writing & publications", "eyebrow": "Ideas & observations"},
-    {"id": "books", "label": "Books", "eyebrow": "Long-form work"},
-    {"id": "ai", "label": "AI & agentic design", "eyebrow": "Building with agents"},
-    {"id": "design", "label": "Product & design work", "eyebrow": "Case studies"},
-    {"id": "art", "label": "Art & exhibitions", "eyebrow": "A creative life"},
-    {"id": "company", "label": "The Aquario Group & ventures", "eyebrow": "Company"},
-    {"id": "teaching", "label": "Teaching & mentorship", "eyebrow": "Sharing what I know"},
-    {"id": "education", "label": "Education", "eyebrow": "Always learning"},
-    {"id": "awards", "label": "Awards & recognition", "eyebrow": "Recognition"},
-    {"id": "community", "label": "Community & causes", "eyebrow": "Giving back"},
-    {"id": "profiles", "label": "Profiles & platforms", "eyebrow": "Find me online"}
+ "subject": {
+  "name": "Smrita Jain",
+  "company": "The Aquario Group (TAG)",
+  "based_in": "New York City (Brooklyn)",
+  "known_for": [
+   "Product & experience design",
+   "Agentic AI design",
+   "Art & photography",
+   "Writing",
+   "Design education"
   ],
-  "entries": [
-    {"id": "north-star-2027", "cats": ["talks", "company"], "title": "Find your North Star: your 2027 clarity session", "source": "The Aquario Group", "kind": "Free workshop · Zoom", "date": "2026-12-19", "time": "12:00–1:15 PM ET", "url": "https://cal.com/find-your-north-star-your-2027-clarity-session", "cta": "Register", "summary": "A free 75-minute strategy workshop for small and medium businesses, freelancers, employees and students on setting 2027 goals and an honest AI value proposition.", "status": "verified", "via": "Event page on cal.com"},
-    {"id": "hdsi-showcase-2026", "cats": ["talks", "ai"], "title": "ADVOCATE at the Harvard Data Science Initiative Agentic AI student showcase", "source": "Harvard Data Science Initiative", "kind": "Showcase presentation", "date": "2026-11-19", "url": "https://ai.smritajaindesign.com/work/advocate", "summary": "Presented the ADVOCATE agentic care concept; one of three students selected to present from a cohort of 250+ (a showcase, not a competition).", "status": "own-site", "via": "Case study on ai.smritajaindesign.com"},
-    {"id": "itv-insight-2018", "cats": ["talks"], "title": "Insight for Creativity, hosted by Ashok Vyas", "source": "ITV Gold", "kind": "Television", "date": "2018-02", "summary": "Television conversation on creativity.", "status": "cited", "via": "Selected CV, smritajainart.com"},
-    {"id": "cnu-2018-activism", "cats": ["talks", "community"], "title": "Why Art as Activism in India is Failing", "source": "Global Status of Women and Girls Conference, Christopher Newport University", "kind": "Conference talk", "date": "2018-03", "url": "https://www.youtube.com/watch?v=aFQo_yOevas", "summary": "Returned to the CNU conference to speak on art and activism; also gave a guest lecture on campus.", "status": "cited", "via": "Selected CV; Wikipedia references"},
-    {"id": "cnu-2018-gender-art", "cats": ["talks"], "title": "Gender and Art", "source": "Christopher Newport University (YouTube)", "kind": "Video", "date": "2018-03-21", "url": "https://www.youtube.com/watch?v=g_3M7i5ZRi8", "summary": "Recorded talk on gender and art at CNU.", "status": "cited", "via": "Wikipedia reference 37"},
-    {"id": "kadlondon-2017", "cats": ["talks"], "title": "Keynote, Kaleidoscope of Art and Design (KADLondon2017)", "source": "Nehru Centre, London", "kind": "Keynote", "date": "2017-09", "url": "https://kadlondon2017.com/", "summary": "Keynote speaker at the creativity conference held alongside her Creating Durga exhibition in London.", "status": "verified", "via": "GDUSA profile; Pratt faculty profile"},
-    {"id": "cnu-2017", "cats": ["talks", "community"], "title": "Domestic and Dating Violence", "source": "Global Status of Women and Girls Conference, Christopher Newport University", "kind": "Conference talk", "date": "2017-03-25", "url": "https://www.youtube.com/watch?v=kscp_UcP1Cg", "summary": "Spoke on how her art helped her speak about experiences that keep many women silent.", "status": "verified", "via": "GDUSA profile; Wikipedia"},
-    {"id": "shine-on-radio-2016", "cats": ["talks", "books"], "title": "Shine On Radio with Kelly: Find your shine, the recipe for Fat Free Samosa", "source": "Transformation Talk Radio", "kind": "Radio interview", "date": "2016-04", "url": "https://www.transformationtalkradio.com/episode/shine-on-radio-with-kelly-find-your-shine-recipe-for-fat-free-samosa-with-empowerment-artist-smrita-jain,22055.html", "summary": "Radio conversation with host Kelly Anne Wadler about Fat Free Samosa and empowerment through art.", "status": "verified", "via": "Guest profile on The Transformation Network"},
-    {"id": "itv-wide-angle-2012", "cats": ["talks"], "title": "Wide Angle, hosted by Ashok Vyas", "source": "ITV Gold", "kind": "Television", "date": "2012-10", "summary": "Television interview.", "status": "cited", "via": "Selected CV, smritajainart.com"},
-
-    {"id": "business-life-2026", "cats": ["press", "company"], "title": "The Aquario Group Turns Multidisciplinary Creativity Into a Brooklyn Consultancy and Store", "source": "Business Life", "kind": "Contributor feature", "date": "2026-10-02", "url": "https://babusinesslife.com/the-aquario-group-turns-multidisciplinary-creativity-into-a-brooklyn-consultancy-and-store/", "summary": "Profiles TAG's consultancy work in brand strategy, UX, e-commerce, AI-enabled workflows and learning, and its artist-led store of 200+ products.", "status": "verified", "via": "Article names Smrita Jain and TAG", "featured": true},
-    {"id": "ny-telegraph-2026", "cats": ["press", "company"], "title": "Brooklyn Studio Blends Design Consultancy and Artist-Led Store", "source": "New York Telegraph", "kind": "Contributor feature", "date": "2026-10-02", "url": "https://thenytelegraph.com/brooklyn-studio-blends-design-consultancy-and-artist-led-store/", "summary": "Traces TAG from a Brooklyn creative practice founded in 2010 to an award-winning design and experience consultancy with its own online store.", "status": "verified", "via": "Article names Smrita Jain and TAG", "featured": true},
-    {"id": "new-plains-2018", "cats": ["press", "art"], "title": "Colours of My Life", "source": "New Plains Review", "kind": "Feature", "date": "2018-07", "url": "https://newplainsreview.com/colours-of-my-life-by-smrita-jain/", "summary": "Feature on her art and life in colour.", "status": "cited", "via": "Selected CV, smritajainart.com"},
-    {"id": "south-asian-times-2018", "cats": ["press"], "title": "Speaking for Others: Artist Smrita Jain", "source": "The South Asian Times", "kind": "Feature", "date": "2018-03", "url": "http://thesouthasiantimes.info/news-Speaking_for_others_Artist_Smrita_Jain-204211-New%20York-112.html", "summary": "Coverage of her talks and advocacy through art.", "status": "cited", "via": "Selected CV, smritajainart.com"},
-    {"id": "indian-panorama-2018", "cats": ["press", "art"], "title": "Expressing Life through Art: Portrait of an Artist", "source": "The Indian Panorama", "kind": "Feature", "date": "2018-03", "url": "https://www.theindianpanorama.news/expressing-life-through-art-portrait-of-an-artist/", "summary": "Portrait of her practice across art, design and writing.", "status": "verified", "via": "Linked from smritajain31.github.io"},
-    {"id": "hum-hindustani-2018", "cats": ["press"], "title": "Hum Hindustani (Hindi edition), page 14", "source": "Hum Hindustani USA", "kind": "Print feature", "date": "2018-03-09", "url": "http://humhindustaniusa.com/epaper/edition/108/09-03-2018/page/14", "summary": "Hindi-language newspaper coverage.", "status": "cited", "via": "Selected CV, smritajainart.com"},
-    {"id": "hindustan-times-2018", "cats": ["press"], "title": "Hindustan Times clipping", "source": "Hindustan Times", "kind": "Print feature", "date": "2018-03", "url": "https://www.dropbox.com/s/6iq9unx5v8sc3l9/Smrita%20Jain%20Hindustan%20times.jpg?dl=0", "summary": "Newspaper clipping.", "status": "cited", "via": "Selected CV, smritajainart.com"},
-    {"id": "gdusa-ptw-2018", "cats": ["press", "awards"], "title": "People to Watch 2018", "source": "GDUSA", "kind": "Profile", "date": "2018-01-31", "url": "https://gdusa.com/smrita-jain/", "summary": "Named to GDUSA's People to Watch for combining art and design talent, leadership and community service.", "status": "verified", "via": "GDUSA profile page"},
-    {"id": "garde-2017-gods", "cats": ["press", "art"], "title": "Real Spirit: Fashion Among Gods", "source": "Garde Magazine", "kind": "Feature", "date": "2017-10", "url": "https://gardemagazine.com/real-spirit-fashion-among-gods-%E7%9C%BE%E7%A5%9E%E4%B9%8B%E9%96%93%E7%9A%84%E6%99%82%E5%B0%9A%E7%B2%BE%E7%A5%9E/", "summary": "Feature drawing on her Creating Durga photography.", "status": "cited", "via": "Selected CV, smritajainart.com"},
-    {"id": "ask-artists-2017", "cats": ["press", "art"], "title": "Smrita Jain: “A Beautiful, Indispensable Obsession”", "source": "Ask Artists", "kind": "Interview", "date": "2017-03-14", "url": "https://askartists.wordpress.com/2017/03/14/sj/", "summary": "Interview by J. Travers on her art practice and process.", "status": "verified", "via": "Linked from smritajain31.github.io; Wikipedia"},
-    {"id": "feminist-wednesday-2016", "cats": ["press", "community"], "title": "Inspiring Interviews: Meet Artist Smrita Jain", "source": "Feminist Wednesday", "kind": "Interview", "date": "2016-11", "url": "http://feministwednesday.com/meet-artist-smrita-jain/", "summary": "Interview on empowerment and positive feminism in her work.", "status": "cited", "via": "Selected CV; Wikipedia"},
-    {"id": "sakhi-2016", "cats": ["press", "books"], "title": "Sakhi Interview: Artist Smrita Jain", "source": "Sakhi", "kind": "Interview", "date": "2016-09", "url": "http://sakhi-nyc.tumblr.com/post/154080491291/sakhi-interview-artist-smrita-jain", "summary": "Interview on why she created Fat Free Samosa.", "status": "cited", "via": "Selected CV; Wikipedia"},
-    {"id": "citizen-2016", "cats": ["press", "books"], "title": "East Side Story", "source": "The Citizen", "kind": "Feature", "date": "2016-04", "url": "https://www.thecitizen.in/index.php/NewsDetail/index/9/7537/East-Side-Story", "summary": "Feature by Sarah Ahmad on Fat Free Samosa and the issues it takes on.", "status": "cited", "via": "Selected CV; Wikipedia"},
-    {"id": "napw-2016", "cats": ["press"], "title": "Member Spotlight, February 17, 2016", "source": "National Association of Professional Women", "kind": "Spotlight", "date": "2016-02-17", "url": "http://blog.napw.com/february-17-2016-member-spotlight/", "summary": "Member spotlight.", "status": "cited", "via": "Selected CV, smritajainart.com"},
-    {"id": "milano-2015", "cats": ["press"], "title": "What's Next", "source": "Milano NYC", "kind": "Feature", "date": "2015-11", "summary": "Feature (no online link known).", "status": "cited", "via": "Selected CV, smritajainart.com"},
-    {"id": "jersey-journal-2014", "cats": ["press", "company", "art"], "title": "New art gallery opening in unexpected neighborhood in Jersey City", "source": "The Jersey Journal (NJ.com)", "kind": "News", "date": "2014-05", "url": "https://www.nj.com/hudson/index.ssf/2014/05/new_art_gallery_opening_in_unexpected_neighborhood_in_jersey_city.html", "summary": "Reports the opening of Surmrit Gallery of Art and Design in Newport, Jersey City.", "status": "cited", "via": "Selected CV; Wikipedia"},
-    {"id": "womens-era-2014", "cats": ["press"], "title": "Women's Era", "source": "Women's Era", "kind": "Print feature", "date": "2014-04", "summary": "Magazine feature (no online link known).", "status": "cited", "via": "Selected CV, smritajainart.com"},
-    {"id": "little-india-2014", "cats": ["press"], "title": "I See Them Differently", "source": "Little India", "kind": "Feature", "date": "2014-03", "url": "http://littleindia.com/i-them-differently/", "summary": "Magazine feature.", "status": "cited", "via": "Selected CV, smritajainart.com"},
-    {"id": "pratt-gateway-2013", "cats": ["press"], "title": "Class Notes, January 2013", "source": "Pratt Gateway", "kind": "Alumni news", "date": "2013-01", "url": "http://gateway.pratt.edu/class-notes-jan13/", "summary": "Pratt alumni class note.", "status": "cited", "via": "Selected CV, smritajainart.com"},
-    {"id": "trade-reporter", "cats": ["press"], "title": "Trade Reporter", "source": "Trade Reporter", "kind": "Print feature", "date": "2012-12", "summary": "Print coverage in April 2011 and December 2012 (no online link known).", "status": "cited", "via": "Selected CV, smritajainart.com"},
-    {"id": "prattfolio-2011", "cats": ["press"], "title": "Prattfolio Fall/Winter 2011: Generations", "source": "Pratt Institute", "kind": "Magazine", "date": "2011", "url": "https://issuu.com/prattinstitute/docs/prattfolio-fallwinter-2011-generations/59", "summary": "Featured in Pratt's alumni magazine.", "status": "cited", "via": "Selected CV; Wikipedia"},
-
-    {"id": "brainz-contributor", "cats": ["writing", "profiles"], "title": "Executive Contributor, Brainz Magazine", "source": "Brainz Magazine", "kind": "Contributor profile", "date": "2026", "url": "https://www.brainzmagazine.com/executive-contributor/smrita-jain", "summary": "Invited Executive Contributor writing on technology, AI and business.", "status": "verified", "via": "Contributor page"},
-    {"id": "brainz-adaptability-1", "cats": ["writing", "ai"], "title": "Why Adaptability Is Your Best Backup Plan in the Age of AI – Part One", "source": "Brainz Magazine", "kind": "Article", "date": "2026", "url": "https://www.brainzmagazine.com/post/why-adaptability-is-your-best-backup-plan-in-the-age-of-ai-part-one", "summary": "On adaptability as a career strategy as AI reshapes work.", "status": "verified", "via": "Listed on contributor page"},
-    {"id": "brainz-adaptability-2", "cats": ["writing", "ai"], "title": "Why Adaptability Is Your Best Backup Plan in the Age of AI – Part Two", "source": "Brainz Magazine", "kind": "Article", "date": "2026", "url": "https://www.brainzmagazine.com/post/why-adaptability-is-your-best-backup-plan-in-the-age-of-ai-part-two", "summary": "Second part of the series on reinvention in the age of AI.", "status": "verified", "via": "Listed on contributor page"},
-    {"id": "brainz-elite-styles", "cats": ["writing", "company"], "title": "Elite Styles Fashion Debuts at Delhi's Teej Pop-Up Melas", "source": "Brainz Magazine", "kind": "Business news", "date": "2026", "url": "https://www.brainzmagazine.com/post/elite-styles-fashion-debuts-at-delhi-s-teej-pop-up-melas", "summary": "On the revival of the family label Elite Styles Fashion at Teej pop-up markets in Delhi.", "status": "verified", "via": "Listed on contributor page"},
-    {"id": "brainz-bay-ridge", "cats": ["writing", "community"], "title": "Protect and Preserve the History of Bay Ridge by Participating in the Rally", "source": "Brainz Magazine", "kind": "Business news", "date": "2026", "url": "https://www.brainzmagazine.com/post/protect-and-preserve-the-history-of-bay-ridge-by-participating-in-the-rally", "summary": "A call to join the community rally to landmark the Visitation Academy and Monastery in Bay Ridge, Brooklyn.", "status": "verified", "via": "Listed on contributor page"},
-    {"id": "garde-2017-fat-bodies", "cats": ["writing"], "title": "Fat Bodies", "source": "Garde Magazine, Issue 35", "kind": "Article", "date": "2017-12", "url": "https://gardemagazine.com/fat-bodies-%E8%82%A5%E8%83%96%E7%9A%84%E8%BA%AB%E9%AB%94/", "summary": "Essay on body image and fat shaming.", "status": "cited", "via": "Selected CV; Wikipedia"},
-    {"id": "huffpost-india", "cats": ["writing"], "title": "Author page, including “Art Is My Cocaine”", "source": "HuffPost India", "kind": "Articles", "date": "2017-10", "url": "https://www.huffingtonpost.in/author/smrita-jain/", "summary": "Contributor writing for HuffPost India.", "status": "cited", "via": "Selected CV; Wikipedia"},
-    {"id": "forjm-2016", "cats": ["writing", "design"], "title": "Forgotten Words and Practises in a Designer's Creative World", "source": "forj(m) Marketing Blog, Australia", "kind": "Article", "date": "2016-11", "url": "http://www.forjmblog.com/forgotten-words-practises-designers-creative-world/", "summary": "Guest article on craft vocabulary and habits that designers lose over time.", "status": "cited", "via": "Selected CV; Wikipedia"},
-
-    {"id": "creating-durga", "cats": ["books", "art"], "title": "Creating Durga", "source": "Surmrit Gallery of Art and Design, New York", "kind": "Photo book · ISBN 978-0988600409", "date": "2013-03", "url": "http://www.creatingdurga.com/", "links": [{"label": "Google Books", "url": "https://books.google.com/books?id=c-8MmQEACAAJ"}], "summary": "Authored and designed photo book on Vedic culture and the deity Durga, told through photographs and text.", "status": "verified", "via": "Pratt faculty profile; Wikipedia"},
-    {"id": "fat-free-samosa", "cats": ["books", "art"], "title": "Fat Free Samosa", "source": "Smrita Jain", "kind": "Autobiography & art performance", "date": "2018", "url": "https://www.smritajainart.com/fat-free-samosa", "summary": "Autobiographical project on fat shaming, bullying, marriage, growing up in India and moving to New York; announced as a book in 2018.", "status": "verified", "via": "smritajainart.com"},
-
-    {"id": "ai-portfolio", "cats": ["ai", "design", "profiles"], "title": "AI & product design portfolio", "source": "ai.smritajaindesign.com", "kind": "Portfolio", "date": "2026", "url": "https://ai.smritajaindesign.com/", "summary": "Full case studies in agentic AI, product and experience design.", "status": "verified", "via": "Own site"},
-    {"id": "hdsi-cert", "cats": ["ai", "education"], "title": "Harvard Data Science Initiative Agentic AI Certification", "source": "Harvard Data Science Initiative", "kind": "Certification · potential completion Dec 2026", "date": "2026", "summary": "Intensive agentic AI program (November 2026 cohort); in progress.", "status": "own-site", "via": "smritajain31.github.io"},
-    {"id": "cs-advocate", "cats": ["ai", "design"], "title": "ADVOCATE", "source": "Case study", "kind": "Concept product · Agentic AI", "date": "2026", "url": "https://ai.smritajaindesign.com/work/advocate", "summary": "Agentic medication-request concept where specialist agents handle low-risk requests within doctor-set limits.", "status": "verified", "via": "Own site"},
-    {"id": "cs-harborgate", "cats": ["ai", "design"], "title": "HarborGate", "source": "Case study", "kind": "Self-initiated concept · Agentic AI", "date": "2026", "url": "https://ai.smritajaindesign.com/", "summary": "Driver app and verification API for trucking and port compliance run by seven agents, cutting onboarding from 30 days to 2–4.", "status": "verified", "via": "Own site"},
-    {"id": "cs-npz", "cats": ["ai", "design"], "title": "NPZ Law Group", "source": "Case study", "kind": "Agentic AI · Legal", "date": "2026", "url": "https://ai.smritajaindesign.com/", "summary": "Immigration-law platform where a conversational assistant runs client intake and attorneys work from a desktop workspace.", "status": "verified", "via": "Own site"},
-    {"id": "cs-craftwords", "cats": ["ai", "design"], "title": "Craft Words", "source": "craftwords.us", "kind": "AI product", "date": "2026", "url": "https://craftwords.us/", "summary": "Bedtime storytelling experience where families choose words and AI generates a story to read or listen to.", "status": "verified", "via": "Own site"},
-    {"id": "cs-four-seasons", "cats": ["design"], "title": "Four Seasons Yachts", "source": "Case study", "kind": "Founding product designer · MRM", "date": "2022", "url": "https://ai.smritajaindesign.com/", "summary": "First self-service booking flow for yacht suites, including holds and deposits; the work won an Effie Silver in 2025.", "status": "verified", "via": "Own site"},
-    {"id": "cs-astrazeneca", "cats": ["design"], "title": "AstraZeneca Tagrisso", "source": "Case study", "kind": "Healthcare", "date": "2022", "url": "https://ai.smritajaindesign.com/", "summary": "Desktop tool guiding an oncologist and lung cancer patient through one shared treatment decision.", "status": "verified", "via": "Own site"},
-    {"id": "cs-camp-kilmer", "cats": ["design"], "title": "Rutgers University: Camp Kilmer", "source": "Case study", "kind": "Mobile · AR", "date": "2026", "url": "https://ai.smritajaindesign.com/", "summary": "Mobile app bringing WWII Camp Kilmer history to campus through an AR lens, audio tours and an archive.", "status": "verified", "via": "Own site"},
-    {"id": "cs-coca-cola", "cats": ["design"], "title": "Coca-Cola OneXP", "source": "Case study", "kind": "Design system", "date": "2021", "url": "https://ai.smritajaindesign.com/", "summary": "Experiences in a shared system that unifies content, journeys and interaction patterns across brands.", "status": "verified", "via": "Own site"},
-    {"id": "cs-usps", "cats": ["design"], "title": "USPS Delivers", "source": "Case study", "kind": "Web · AR/VR", "date": "2021", "url": "https://ai.smritajaindesign.com/", "summary": "Restructured navigation and architecture, searchable tags, microsites and AR/VR experiences.", "status": "verified", "via": "Own site"},
-    {"id": "cs-ey", "cats": ["design"], "title": "EY Global Tax Platform", "source": "Case study", "kind": "Enterprise", "date": "2020", "url": "https://ai.smritajaindesign.com/", "summary": "Tax-data workflows and dashboards bringing key tax functions into one product.", "status": "verified", "via": "Own site"},
-    {"id": "trad-portfolio", "cats": ["design", "profiles"], "title": "Traditional design portfolio", "source": "smritajaindesign.com", "kind": "Portfolio", "date": "2018", "url": "https://www.smritajaindesign.com/", "summary": "Earlier portfolio of brand, graphic and UX work.", "status": "verified", "via": "Linked from AI portfolio"},
-    {"id": "ateem-typeface", "cats": ["design", "awards"], "title": "Ateem typeface", "source": "DesignFirms", "kind": "Typeface · Graphic Design Award, first position", "date": "2016-03", "url": "https://www.designfirms.org/awards/graphic/archive/2016/03/show/11756/ateem-typeface-design-by-smrita-jain/", "summary": "Typeface design that took first position in DesignFirms' graphic design awards.", "status": "cited", "via": "Wikipedia references 1, 8"},
-
-    {"id": "art-site", "cats": ["art", "profiles"], "title": "Smrita Jain Art", "source": "smritajainart.com", "kind": "Artist website", "date": "2026", "url": "https://www.smritajainart.com/", "summary": "Paintings, installations, artist statement and selected CV.", "status": "verified", "via": "Own site"},
-    {"id": "art-cliffs", "cats": ["art"], "title": "In the cliffs I will find peace", "source": "smritajainart.com", "kind": "Painting series", "date": "2026", "url": "https://www.smritajainart.com/in-the-cliffs-i-will-find-peace", "summary": "Painting series.", "status": "verified", "via": "Own site"},
-    {"id": "art-unapologetic", "cats": ["art"], "title": "Unapologetic Flowers", "source": "smritajainart.com", "kind": "Painting series", "date": "2026", "url": "https://www.smritajainart.com/unapologetic-flowers", "summary": "Painting series.", "status": "verified", "via": "Own site"},
-    {"id": "art-family", "cats": ["art"], "title": "Family Sketches", "source": "smritajainart.com", "kind": "Drawings", "date": "2026", "url": "https://www.smritajainart.com/family-sketches", "summary": "Sketch series.", "status": "verified", "via": "Own site"},
-    {"id": "art-elmyra", "cats": ["art", "company"], "title": "Elmyra #1", "source": "TAG Studio Store", "kind": "Acrylic painting", "date": "2026", "url": "https://store.theaquariogroup.com/products/elmyra-1-artist-acrylic-painting-frame-not-included", "summary": "A return to figurative painting and a tribute to her grey cat.", "status": "verified", "via": "Store listing"},
-    {"id": "art-tippy", "cats": ["art", "awards"], "title": "Tippy Tippy Tap Tap", "source": "smritajainart.com", "kind": "Wall art installation", "date": "2016", "url": "https://www.smritajainart.com/tippy-tippy-tap-tap", "summary": "Installation that received an Honorary Mention at the London International Creative awards, January 2016.", "status": "verified", "via": "Own site; LICC listing"},
-    {"id": "art-non-gujarati-jains", "cats": ["art"], "title": "The Non-Gujarati Jains", "source": "New York State Traditions", "kind": "Film · cultural fieldwork", "url": "https://nytraditions.org/cultural-protocol/smrita-jain", "summary": "A fieldwork project exploring cultural traditions.", "status": "own-site", "via": "Linked from smritajain31.github.io"},
-    {"id": "ex-nehru-2017", "cats": ["art"], "title": "Creating Durga", "source": "The Nehru Centre, High Commission of India, London", "kind": "Exhibition", "date": "2017-09", "summary": "Exhibition of Creating Durga photographs in London.", "status": "cited", "via": "Selected CV; Wikipedia"},
-    {"id": "ex-royal-opera-2016", "cats": ["art"], "title": "Art & Colors", "source": "Royal Opera Arcade Gallery, London", "kind": "Exhibition", "date": "2016-09", "summary": "Group exhibition in London.", "status": "cited", "via": "Selected CV; Wikipedia"},
-    {"id": "ex-surmrit-2015", "cats": ["art"], "title": "Exhibition at Surmrit Gallery of Art and Design", "source": "Jersey City, NJ", "kind": "Exhibition", "date": "2015-11", "summary": "Exhibition at her gallery.", "status": "cited", "via": "Selected CV"},
-    {"id": "ex-pratt-alumni-2015", "cats": ["art"], "title": "Pratt Alumni Exhibition", "source": "The Juliana Curran Terian Design Center Pavilion, Brooklyn", "kind": "Exhibition", "date": "2015-09", "url": "https://issuu.com/prattinstitute/docs/alumni_day_gallery_guide", "summary": "Alumni Day group exhibition.", "status": "cited", "via": "Selected CV; Wikipedia"},
-    {"id": "ex-berger-2014", "cats": ["art"], "title": "Group exhibition", "source": "The Arthur M. Berger Art Gallery, Manhattanville College, NY", "kind": "Exhibition", "date": "2014-12", "summary": "Group exhibition.", "status": "cited", "via": "Selected CV"},
-    {"id": "ex-crossing-2014", "cats": ["art"], "title": "Group exhibition", "source": "Crossing Art, Queens, NY", "kind": "Exhibition", "date": "2014-07", "summary": "Group exhibition.", "status": "cited", "via": "Selected CV"},
-    {"id": "ex-art-mall-2014", "cats": ["art"], "title": "Group exhibition", "source": "Art Mall, New Delhi", "kind": "Exhibition", "date": "2014-06", "summary": "Group exhibition in India.", "status": "cited", "via": "Selected CV"},
-    {"id": "ex-queens-2014", "cats": ["art"], "title": "Erasing Borders 2014: Contemporary Indian Art of the Diaspora", "source": "Queens Museum (IAAC)", "kind": "Exhibition", "date": "2014-01", "url": "https://iaac.us/erasing_borders_2014/Smritajain/bio.htm", "summary": "Group exhibition of diaspora artists presented by the Indo-American Arts Council.", "status": "verified", "via": "IAAC artist page"},
-    {"id": "ex-alumni-fair-2013", "cats": ["art", "books"], "title": "Juried Second Annual Alumni Art, Design and Book Fair", "source": "Pratt Institute", "kind": "Exhibition", "date": "2013-09", "summary": "Juried book exhibition showing Creating Durga.", "status": "cited", "via": "Selected CV; Wikipedia"},
-    {"id": "ex-javits-2012", "cats": ["art"], "title": "Contemporary Art Fair", "source": "Javits Center, New York", "kind": "Art fair", "date": "2012-10", "summary": "Group exhibition at the Contemporary Art Fair.", "status": "cited", "via": "Selected CV; Wikipedia"},
-    {"id": "ex-pratt-manhattan-2011", "cats": ["art"], "title": "First solo exhibition", "source": "Pratt Manhattan Gallery, New York", "kind": "Solo exhibition", "date": "2011-05", "summary": "Her first solo exhibition.", "status": "verified", "via": "Transformation Network guest profile; Selected CV"},
-    {"id": "ex-best-design-2010", "cats": ["art", "design"], "title": "Juried Annual Best Design Showcase", "source": "Manhattan Center, New York", "kind": "Showcase", "date": "2010-05", "summary": "Juried design showcase.", "status": "cited", "via": "Selected CV"},
-    {"id": "ex-beyond-sea", "cats": ["art"], "title": "Beyond the Sea", "source": "Pratt Fine Arts Gallery, Brooklyn", "kind": "Group exhibition", "date": "2007-12", "summary": "Photographs from Creating Durga shown in a Pratt group exhibition.", "status": "verified", "via": "Coroflot profile; Selected CV"},
-
-    {"id": "tag", "cats": ["company"], "title": "The Aquario Group (TAG)", "source": "theaquariogroup.com", "kind": "Founder · Creative & Experience Director", "date": "2010", "url": "https://www.theaquariogroup.com/", "summary": "Independent Brooklyn-based strategy, design and experience consultancy she founded; the vision began in New Delhi in 2005 and the firm was formally established in 2010.", "status": "verified", "via": "TAG website"},
-    {"id": "tag-store", "cats": ["company", "art"], "title": "TAG Studio Store", "source": "store.theaquariogroup.com", "kind": "Artist-led online store", "date": "2026", "url": "https://store.theaquariogroup.com/", "summary": "TAG's first online store, rooted in craft and intentional living, with products she creates, designs or curates.", "status": "verified", "via": "Store; Wikipedia"},
-    {"id": "tag-insights", "cats": ["company", "talks"], "title": "Insights & guides", "source": "The Aquario Group", "kind": "Workshops hub", "date": "2026", "url": "https://www.theaquariogroup.com/#insights", "summary": "TAG's hub for workshops, recordings and downloadable guides.", "status": "verified", "via": "TAG website"},
-    {"id": "tag-book-call", "cats": ["company", "profiles"], "title": "Book a 30-minute call", "source": "cal.com", "kind": "Contact", "date": "2026", "url": "https://cal.com/smrita-jain-w0mzox/30min", "summary": "Schedule a call with Smrita.", "status": "verified", "via": "Linked from TAG and the AI portfolio"},
-    {"id": "surmrit-gallery", "cats": ["company", "art"], "title": "Surmrit Gallery of Art and Design", "source": "surmritgallery.com", "kind": "Artist-led gallery", "date": "2014-05-29", "url": "http://surmritgallery.com/", "summary": "Gallery she opened in Newport, Jersey City, in May 2014, later in Brooklyn and Manhattan; publisher of Creating Durga.", "status": "verified", "via": "Transformation Network guest profile; Wikipedia"},
-
-    {"id": "teach-pratt-vap", "cats": ["teaching"], "title": "Visiting Assistant Professor", "source": "Pratt Institute", "kind": "Graduate Communications Design", "date": "2023-01", "end": "2024-05", "url": "https://www.pratt.edu/people/smrita-jain/", "summary": "Taught design management to graduate students.", "status": "verified", "via": "Pratt faculty profile; Wikipedia"},
-    {"id": "teach-springboard", "cats": ["teaching"], "title": "UX/UI Design Instructor & Mentor", "source": "Springboard", "kind": "Online", "date": "2021-10", "end": "2023-12", "summary": "Mentored students one-to-one through a nine-month UI/UX career program.", "status": "verified", "via": "Pratt faculty profile"},
-    {"id": "teach-designlab", "cats": ["teaching"], "title": "UX Design Mentor", "source": "Designlab", "kind": "Online", "date": "2020-12", "end": "2026-10", "url": "https://app.designlab.com/smritajain", "summary": "Weekly mentoring for UX Academy students, including research, strategy and career services.", "status": "verified", "via": "Designlab mentor profile"},
-    {"id": "teach-cnu", "cats": ["teaching", "talks"], "title": "Guest lecturer", "source": "Christopher Newport University, Virginia", "kind": "Guest lecture", "date": "2018-03", "summary": "Guest lecture alongside the Global Status of Women and Girls conference.", "status": "verified", "via": "Pratt faculty profile"},
-    {"id": "teach-fit", "cats": ["teaching"], "title": "Judge and reviewer", "source": "Fashion Institute of Technology and St. John's University, New York", "kind": "Juror", "date": "2011", "end": "2013", "summary": "Reviewed and judged student work.", "status": "verified", "via": "Pratt faculty profile; Wikipedia"},
-    {"id": "teach-pratt-lecturer", "cats": ["teaching"], "title": "Assistant Lecturer", "source": "Pratt Institute", "kind": "Teaching", "date": "2011", "summary": "Assistant lecturer after graduating.", "status": "cited", "via": "Wikipedia"},
-    {"id": "teach-aiga-mentor", "cats": ["teaching", "community"], "title": "AIGA design mentor", "source": "High School of Art and Design, New York", "kind": "Mentoring", "date": "2010-11", "summary": "Mentored high-school design students through AIGA.", "status": "cited", "via": "Wikipedia"},
-    {"id": "teach-pratt-ga", "cats": ["teaching"], "title": "Graduate Assistant", "source": "Pratt Institute", "kind": "Teaching", "date": "2008-01", "end": "2009-12", "summary": "Graduate assistantship during her MS.", "status": "cited", "via": "Wikipedia"},
-
-    {"id": "edu-pratt", "cats": ["education"], "title": "MS, Communications Design", "source": "Pratt Institute, New York", "kind": "Degree", "date": "2010", "summary": "Master of Science in Communications Design.", "status": "verified", "via": "Pratt faculty profile"},
-    {"id": "edu-apeejay", "cats": ["education"], "title": "Bachelor of Design, Graphic Design", "source": "Apeejay Institute of Design (Guru Nanak Dev University), New Delhi", "kind": "Degree", "date": "2006", "summary": "Undergraduate design degree.", "status": "own-site", "via": "smritajain31.github.io; Wikipedia"},
-    {"id": "edu-gargi", "cats": ["education"], "title": "BA, Political Science", "source": "Gargi College, University of Delhi", "kind": "Degree", "date": "2003", "summary": "Undergraduate degree in political science.", "status": "own-site", "via": "smritajain31.github.io; Wikipedia"},
-    {"id": "edu-arena", "cats": ["education"], "title": "Certified Web Professional", "source": "Arena Multimedia", "kind": "Certificate", "date": "2003", "summary": "Web design certificate.", "status": "cited", "via": "Wikipedia"},
-    {"id": "edu-uxdi", "cats": ["education"], "title": "Professional Diploma in UX Design", "source": "UX Design Institute (Glasgow Caledonian University)", "kind": "Diploma", "date": "2021", "summary": "Professional UX diploma.", "status": "own-site", "via": "smritajain31.github.io"},
-    {"id": "edu-ibm", "cats": ["education"], "title": "Enterprise Design Thinking", "source": "IBM", "kind": "Certificate", "date": "2021", "summary": "Design thinking certification.", "status": "own-site", "via": "smritajain31.github.io"},
-    {"id": "edu-elvtr", "cats": ["education"], "title": "UX/UI for Gaming", "source": "ELVTR", "kind": "Course", "summary": "Course in game UX and UI.", "status": "own-site", "via": "smritajain31.github.io"},
-
-    {"id": "award-effie-2025", "cats": ["awards", "design"], "title": "Effie Silver, Digital Commerce Services", "source": "Effie Awards", "kind": "Award", "date": "2025-06", "summary": "For the Four Seasons Yachts booking platform.", "status": "own-site", "via": "smritajain31.github.io"},
-    {"id": "award-ana-b2-2025", "cats": ["awards"], "title": "ANA B2 Awards, Category of One", "source": "ANA", "kind": "Award", "date": "2025", "summary": "B2B marketing award.", "status": "own-site", "via": "smritajain31.github.io"},
-    {"id": "award-agda-2017", "cats": ["awards"], "title": "54th American Graphic Design Award", "source": "GDUSA", "kind": "Award", "date": "2017-10", "url": "https://contests.gdusa.com/gdusa-contest-winner?cc=agda17&ids=0%7C1603212&iy=&im=", "summary": "American Graphic Design Awards winner.", "status": "cited", "via": "Wikipedia reference 4"},
-    {"id": "award-creativity-2017", "cats": ["awards"], "title": "47th Creativity International Award, Gold", "source": "Creativity International", "kind": "Award", "date": "2017-10", "url": "https://creativityawards.com/?submission=incredible-india", "summary": "Gold award for an Incredible India entry.", "status": "cited", "via": "Wikipedia reference 5"},
-    {"id": "award-summit", "cats": ["awards"], "title": "Summit International Creative Award, Silver (Government Marketing)", "source": "Summit International Awards", "kind": "Award", "date": "2016", "url": "https://summitawards.com/past-sca-awards-listings/", "summary": "Silver in government marketing; also recognised in 2017.", "status": "cited", "via": "Wikipedia reference 6"},
-    {"id": "award-licc-2016", "cats": ["awards", "art"], "title": "London International Creative, Honorary Mention", "source": "London International Creative Competition", "kind": "Award", "date": "2016-01", "url": "http://www.licc.us/en/zoom.php?eid=2-20748-16", "summary": "For the wall installation Tippy Tippy Tap Tap.", "status": "cited", "via": "Selected CV; Wikipedia"},
-    {"id": "award-aiga-2016", "cats": ["awards"], "title": "Design Leader", "source": "AIGA", "kind": "Recognition", "date": "2016", "url": "https://www.aiga.org/general/profile/?uid=141293", "summary": "Named a Design Leader by AIGA.", "status": "cited", "via": "Wikipedia"},
-
-    {"id": "landmark-visitation", "cats": ["community", "company"], "title": "Landmark Visitation Initiative merchandise", "source": "TAG Studio Store", "kind": "Fundraising design", "date": "2026", "url": "https://store.theaquariogroup.com/", "summary": "Pins, bags, caps and totes designed to support the campaign to landmark Visitation Academy and Monastery in Bay Ridge, with all sales donated to the initiative.", "status": "own-site", "via": "TAG Studio Store"},
-    {"id": "sickle-cell", "cats": ["community"], "title": "Creative Director (volunteer)", "source": "Sickle Cell International Foundation, New York", "kind": "Volunteer", "date": "2020-09", "summary": "Volunteer creative direction for the foundation.", "status": "cited", "via": "Resume hosted by Pratt (2022)"},
-
-    {"id": "p-wikipedia", "cats": ["profiles"], "title": "Wikipedia", "source": "en.wikipedia.org", "kind": "Encyclopedia article", "url": "https://en.wikipedia.org/wiki/Smrita_Jain", "summary": "Encyclopedia article.", "status": "verified", "via": "Primary reference"},
-    {"id": "p-linkedin", "cats": ["profiles"], "title": "LinkedIn", "source": "linkedin.com", "kind": "Professional profile", "url": "https://www.linkedin.com/in/smritajain/", "summary": "Professional profile.", "status": "verified", "via": "Own link"},
-    {"id": "p-github", "cats": ["profiles", "ai"], "title": "GitHub", "source": "github.com", "kind": "Code & open source", "url": "https://github.com/smritajain31", "summary": "Prototypes, this archive, and open-source UI work.", "status": "verified", "via": "Own link"},
-    {"id": "p-tag-linkedin", "cats": ["profiles", "company"], "title": "The Aquario Group on LinkedIn", "source": "linkedin.com", "kind": "Company page", "url": "https://www.linkedin.com/company/aquario-group", "summary": "Company page.", "status": "verified", "via": "TAG website"},
-    {"id": "p-instagram", "cats": ["profiles", "company"], "title": "@aquariogroup on Instagram", "source": "instagram.com", "kind": "Social", "url": "https://www.instagram.com/aquariogroup", "summary": "TAG on Instagram.", "status": "verified", "via": "TAG website"},
-    {"id": "p-facebook", "cats": ["profiles", "company"], "title": "The Aquario Group on Facebook", "source": "facebook.com", "kind": "Social", "url": "https://www.facebook.com/theaquariogroup", "summary": "TAG on Facebook.", "status": "verified", "via": "TAG website"},
-    {"id": "p-pratt", "cats": ["profiles", "teaching"], "title": "Pratt Institute faculty profile", "source": "pratt.edu", "kind": "Faculty profile", "url": "https://www.pratt.edu/people/smrita-jain/", "summary": "Faculty biography.", "status": "verified", "via": "Pratt"},
-    {"id": "p-gdusa-gallery", "cats": ["profiles", "design"], "title": "GDUSA designer gallery", "source": "gallery.gdusa.com", "kind": "Portfolio", "url": "https://gallery.gdusa.com/designer/smrita-jain", "summary": "Design work shown on GDUSA.", "status": "verified", "via": "Linked from smritajain31.github.io"},
-    {"id": "p-behance", "cats": ["profiles", "design"], "title": "Behance", "source": "behance.net", "kind": "Portfolio", "url": "https://www.behance.net/smritajain", "summary": "Design portfolio.", "status": "cited", "via": "Wikipedia reference 15"},
-    {"id": "p-coroflot", "cats": ["profiles", "design"], "title": "Coroflot", "source": "coroflot.com", "kind": "Portfolio", "url": "https://www.coroflot.com/smritajain/profile", "summary": "Designer profile.", "status": "verified", "via": "Coroflot"},
-    {"id": "p-designlab", "cats": ["profiles", "teaching"], "title": "Designlab mentor profile", "source": "designlab.com", "kind": "Mentor profile", "url": "https://app.designlab.com/smritajain", "summary": "Mentor profile with student testimonials.", "status": "verified", "via": "Designlab"},
-    {"id": "p-artrabbit", "cats": ["profiles", "art"], "title": "ArtRabbit", "source": "artrabbit.com", "kind": "Artist profile", "url": "https://www.artrabbit.com/people/smrita-jain-s/artist", "summary": "Exhibition listings.", "status": "cited", "via": "Wikipedia reference 17"},
-    {"id": "p-natgeo", "cats": ["profiles", "art"], "title": "National Geographic Your Shot", "source": "nationalgeographic.com", "kind": "Photography community", "date": "2016-01", "url": "http://yourshot.nationalgeographic.com/profile/1230104/", "summary": "Photography community profile.", "status": "cited", "via": "Selected CV"},
-    {"id": "p-transformation", "cats": ["profiles", "talks"], "title": "Transformation Network guest profile", "source": "thetransformationnetwork.com", "kind": "Guest profile", "url": "https://www.thetransformationnetwork.com/ttrevelution/guest/smrita-jain-4334/", "summary": "Radio guest biography.", "status": "verified", "via": "Transformation Network"}
+  "websites": [
+   {
+    "label": "AI & product design portfolio",
+    "url": "https://ai.smritajaindesign.com/"
+   },
+   {
+    "label": "The Aquario Group",
+    "url": "https://www.theaquariogroup.com/"
+   },
+   {
+    "label": "Art",
+    "url": "https://www.smritajainart.com/"
+   },
+   {
+    "label": "TAG Studio Store",
+    "url": "https://store.theaquariogroup.com/"
+   }
   ]
+ },
+ "updated": "2026-11-26",
+ "categories": [
+  {
+   "id": "talks",
+   "label": "Talks, shows & workshops",
+   "eyebrow": "On stage, on air, on Zoom"
+  },
+  {
+   "id": "press",
+   "label": "Press, features & interviews",
+   "eyebrow": "Stories & conversations"
+  },
+  {
+   "id": "writing",
+   "label": "Writing & publications",
+   "eyebrow": "Ideas & observations"
+  },
+  {
+   "id": "books",
+   "label": "Books",
+   "eyebrow": "Long-form work"
+  },
+  {
+   "id": "ai",
+   "label": "AI & agentic design",
+   "eyebrow": "Building with agents"
+  },
+  {
+   "id": "design",
+   "label": "Product & design work",
+   "eyebrow": "Case studies"
+  },
+  {
+   "id": "art",
+   "label": "Art & exhibitions",
+   "eyebrow": "A creative life"
+  },
+  {
+   "id": "company",
+   "label": "The Aquario Group & ventures",
+   "eyebrow": "Company"
+  },
+  {
+   "id": "teaching",
+   "label": "Teaching & mentorship",
+   "eyebrow": "Sharing what I know"
+  },
+  {
+   "id": "education",
+   "label": "Education",
+   "eyebrow": "Always learning"
+  },
+  {
+   "id": "awards",
+   "label": "Awards & recognition",
+   "eyebrow": "Recognition"
+  },
+  {
+   "id": "community",
+   "label": "Community & causes",
+   "eyebrow": "Giving back"
+  },
+  {
+   "id": "profiles",
+   "label": "Profiles & platforms",
+   "eyebrow": "Find me online"
+  }
+ ],
+ "entries": [
+  {
+   "id": "north-star-2027",
+   "cats": [
+    "talks",
+    "company"
+   ],
+   "title": "Find your North Star: your 2027 clarity session",
+   "source": "The Aquario Group",
+   "kind": "Free online workshop · 75 minutes",
+   "date": "2026-12-19",
+   "time": "12:00–1:15 PM ET",
+   "url": "https://cal.com/find-your-north-star-your-2027-clarity-session",
+   "cta": "Register",
+   "summary": "A free working session for small businesses, freelancers and students to get clear on what they want versus what they need before 2027.",
+   "status": "verified",
+   "via": "Event page on cal.com",
+   "about": [
+    "Separate what you want from what you need",
+    "Set clear goals for 2027",
+    "Decide where AI fits in your work, and where it doesn’t",
+    "Plan for a day when AI isn’t available"
+   ],
+   "note": "Free · online, join link emailed before the session · registration closes Dec 17"
+  },
+  {
+   "id": "hdsi-showcase-2026",
+   "cats": [
+    "talks",
+    "ai"
+   ],
+   "title": "ADVOCATE at the Harvard Data Science Initiative Agentic AI student showcase",
+   "source": "Harvard Data Science Initiative",
+   "kind": "Showcase presentation",
+   "date": "2026-11-19",
+   "url": "https://ai.smritajaindesign.com/work/advocate",
+   "summary": "Presented the ADVOCATE agentic care concept; one of three students selected to present from a cohort of 250+ (a showcase, not a competition).",
+   "status": "own-site",
+   "via": "Case study on ai.smritajaindesign.com"
+  },
+  {
+   "id": "itv-insight-2018",
+   "cats": [
+    "talks"
+   ],
+   "title": "Insight for Creativity, hosted by Ashok Vyas",
+   "source": "ITV Gold",
+   "kind": "Television",
+   "date": "2018-02",
+   "summary": "Television conversation on creativity.",
+   "status": "cited",
+   "via": "Selected CV, smritajainart.com"
+  },
+  {
+   "id": "cnu-2018-activism",
+   "cats": [
+    "talks",
+    "community"
+   ],
+   "title": "Why Art as Activism in India is Failing",
+   "source": "Global Status of Women and Girls Conference, Christopher Newport University",
+   "kind": "Conference talk",
+   "date": "2018-03",
+   "url": "https://www.youtube.com/watch?v=aFQo_yOevas",
+   "summary": "Returned to the CNU conference to speak on art and activism; also gave a guest lecture on campus.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia references"
+  },
+  {
+   "id": "cnu-2018-gender-art",
+   "cats": [
+    "talks"
+   ],
+   "title": "Gender and Art",
+   "source": "Christopher Newport University (YouTube)",
+   "kind": "Video",
+   "date": "2018-03-21",
+   "url": "https://www.youtube.com/watch?v=g_3M7i5ZRi8",
+   "summary": "Recorded talk on gender and art at CNU.",
+   "status": "cited",
+   "via": "Wikipedia reference 37"
+  },
+  {
+   "id": "kadlondon-2017",
+   "cats": [
+    "talks"
+   ],
+   "title": "Keynote, Kaleidoscope of Art and Design (KADLondon2017)",
+   "source": "Nehru Centre, London",
+   "kind": "Keynote",
+   "date": "2017-09",
+   "url": "https://kadlondon2017.com/",
+   "summary": "Keynote speaker at the creativity conference held alongside her Creating Durga exhibition in London.",
+   "status": "verified",
+   "via": "GDUSA profile; Pratt faculty profile"
+  },
+  {
+   "id": "cnu-2017",
+   "cats": [
+    "talks",
+    "community"
+   ],
+   "title": "Domestic and Dating Violence",
+   "source": "Global Status of Women and Girls Conference, Christopher Newport University",
+   "kind": "Conference talk",
+   "date": "2017-03-25",
+   "url": "https://www.youtube.com/watch?v=kscp_UcP1Cg",
+   "summary": "Spoke on how her art helped her speak about experiences that keep many women silent.",
+   "status": "verified",
+   "via": "GDUSA profile; Wikipedia"
+  },
+  {
+   "id": "shine-on-radio-2016",
+   "cats": [
+    "talks",
+    "books"
+   ],
+   "title": "Shine On Radio with Kelly: Find your shine, the recipe for Fat Free Samosa",
+   "source": "Transformation Talk Radio",
+   "kind": "Radio interview",
+   "date": "2016-04",
+   "url": "https://www.transformationtalkradio.com/episode/shine-on-radio-with-kelly-find-your-shine-recipe-for-fat-free-samosa-with-empowerment-artist-smrita-jain,22055.html",
+   "summary": "Radio conversation with host Kelly Anne Wadler about Fat Free Samosa and empowerment through art.",
+   "status": "verified",
+   "via": "Guest profile on The Transformation Network"
+  },
+  {
+   "id": "itv-wide-angle-2012",
+   "cats": [
+    "talks"
+   ],
+   "title": "Wide Angle, hosted by Ashok Vyas",
+   "source": "ITV Gold",
+   "kind": "Television",
+   "date": "2012-10",
+   "summary": "Television interview.",
+   "status": "cited",
+   "via": "Selected CV, smritajainart.com"
+  },
+  {
+   "id": "business-life-2026",
+   "cats": [
+    "press",
+    "company"
+   ],
+   "title": "The Aquario Group Turns Multidisciplinary Creativity Into a Brooklyn Consultancy and Store",
+   "source": "Business Life",
+   "kind": "Contributor feature",
+   "date": "2026-10-02",
+   "url": "https://babusinesslife.com/the-aquario-group-turns-multidisciplinary-creativity-into-a-brooklyn-consultancy-and-store/",
+   "summary": "Profiles TAG's consultancy work in brand strategy, UX, e-commerce, AI-enabled workflows and learning, and its artist-led store of 200+ products.",
+   "status": "verified",
+   "via": "Article names Smrita Jain and TAG",
+   "featured": true
+  },
+  {
+   "id": "ny-telegraph-2026",
+   "cats": [
+    "press",
+    "company"
+   ],
+   "title": "Brooklyn Studio Blends Design Consultancy and Artist-Led Store",
+   "source": "New York Telegraph",
+   "kind": "Contributor feature",
+   "date": "2026-10-02",
+   "url": "https://thenytelegraph.com/brooklyn-studio-blends-design-consultancy-and-artist-led-store/",
+   "summary": "Traces TAG from a Brooklyn creative practice founded in 2010 to an award-winning design and experience consultancy with its own online store.",
+   "status": "verified",
+   "via": "Article names Smrita Jain and TAG",
+   "featured": true
+  },
+  {
+   "id": "new-plains-2018",
+   "cats": [
+    "press",
+    "art"
+   ],
+   "title": "Colours of My Life",
+   "source": "New Plains Review",
+   "kind": "Feature",
+   "date": "2018-07",
+   "url": "https://newplainsreview.com/colours-of-my-life-by-smrita-jain/",
+   "summary": "Feature on her art and life in colour.",
+   "status": "cited",
+   "via": "Selected CV, smritajainart.com"
+  },
+  {
+   "id": "south-asian-times-2018",
+   "cats": [
+    "press"
+   ],
+   "title": "Speaking for Others: Artist Smrita Jain",
+   "source": "The South Asian Times",
+   "kind": "Feature",
+   "date": "2018-03",
+   "url": "http://thesouthasiantimes.info/news-Speaking_for_others_Artist_Smrita_Jain-204211-New%20York-112.html",
+   "summary": "Coverage of her talks and advocacy through art.",
+   "status": "cited",
+   "via": "Selected CV, smritajainart.com"
+  },
+  {
+   "id": "indian-panorama-2018",
+   "cats": [
+    "press",
+    "art"
+   ],
+   "title": "Expressing Life through Art: Portrait of an Artist",
+   "source": "The Indian Panorama",
+   "kind": "Feature",
+   "date": "2018-03",
+   "url": "https://www.theindianpanorama.news/expressing-life-through-art-portrait-of-an-artist/",
+   "summary": "Portrait of her practice across art, design and writing.",
+   "status": "verified",
+   "via": "Linked from smritajain31.github.io"
+  },
+  {
+   "id": "hum-hindustani-2018",
+   "cats": [
+    "press"
+   ],
+   "title": "Hum Hindustani (Hindi edition), page 14",
+   "source": "Hum Hindustani USA",
+   "kind": "Print feature",
+   "date": "2018-03-09",
+   "url": "http://humhindustaniusa.com/epaper/edition/108/09-03-2018/page/14",
+   "summary": "Hindi-language newspaper coverage.",
+   "status": "cited",
+   "via": "Selected CV, smritajainart.com"
+  },
+  {
+   "id": "hindustan-times-2018",
+   "cats": [
+    "press"
+   ],
+   "title": "Hindustan Times clipping",
+   "source": "Hindustan Times",
+   "kind": "Print feature",
+   "date": "2018-03",
+   "url": "https://www.dropbox.com/s/6iq9unx5v8sc3l9/Smrita%20Jain%20Hindustan%20times.jpg?dl=0",
+   "summary": "Newspaper clipping.",
+   "status": "cited",
+   "via": "Selected CV, smritajainart.com"
+  },
+  {
+   "id": "gdusa-ptw-2018",
+   "cats": [
+    "press",
+    "awards"
+   ],
+   "title": "People to Watch 2018",
+   "source": "GDUSA",
+   "kind": "Profile",
+   "date": "2018-01-31",
+   "url": "https://gdusa.com/smrita-jain/",
+   "summary": "Named to GDUSA's People to Watch for combining art and design talent, leadership and community service.",
+   "status": "verified",
+   "via": "GDUSA profile page"
+  },
+  {
+   "id": "garde-2017-gods",
+   "cats": [
+    "press",
+    "art"
+   ],
+   "title": "Real Spirit: Fashion Among Gods",
+   "source": "Garde Magazine",
+   "kind": "Feature",
+   "date": "2017-10",
+   "url": "https://gardemagazine.com/real-spirit-fashion-among-gods-%E7%9C%BE%E7%A5%9E%E4%B9%8B%E9%96%93%E7%9A%84%E6%99%82%E5%B0%9A%E7%B2%BE%E7%A5%9E/",
+   "summary": "Feature drawing on her Creating Durga photography.",
+   "status": "cited",
+   "via": "Selected CV, smritajainart.com"
+  },
+  {
+   "id": "ask-artists-2017",
+   "cats": [
+    "press",
+    "art"
+   ],
+   "title": "Smrita Jain: “A Beautiful, Indispensable Obsession”",
+   "source": "Ask Artists",
+   "kind": "Interview",
+   "date": "2017-03-14",
+   "url": "https://askartists.wordpress.com/2017/03/14/sj/",
+   "summary": "Interview by J. Travers on her art practice and process.",
+   "status": "verified",
+   "via": "Linked from smritajain31.github.io; Wikipedia"
+  },
+  {
+   "id": "feminist-wednesday-2016",
+   "cats": [
+    "press",
+    "community"
+   ],
+   "title": "Inspiring Interviews: Meet Artist Smrita Jain",
+   "source": "Feminist Wednesday",
+   "kind": "Interview",
+   "date": "2016-11",
+   "url": "http://feministwednesday.com/meet-artist-smrita-jain/",
+   "summary": "Interview on empowerment and positive feminism in her work.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "sakhi-2016",
+   "cats": [
+    "press",
+    "books"
+   ],
+   "title": "Sakhi Interview: Artist Smrita Jain",
+   "source": "Sakhi",
+   "kind": "Interview",
+   "date": "2016-09",
+   "url": "http://sakhi-nyc.tumblr.com/post/154080491291/sakhi-interview-artist-smrita-jain",
+   "summary": "Interview on why she created Fat Free Samosa.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "citizen-2016",
+   "cats": [
+    "press",
+    "books"
+   ],
+   "title": "East Side Story",
+   "source": "The Citizen",
+   "kind": "Feature",
+   "date": "2016-04",
+   "url": "https://www.thecitizen.in/index.php/NewsDetail/index/9/7537/East-Side-Story",
+   "summary": "Feature by Sarah Ahmad on Fat Free Samosa and the issues it takes on.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "napw-2016",
+   "cats": [
+    "press"
+   ],
+   "title": "Member Spotlight, February 17, 2016",
+   "source": "National Association of Professional Women",
+   "kind": "Spotlight",
+   "date": "2016-02-17",
+   "url": "http://blog.napw.com/february-17-2016-member-spotlight/",
+   "summary": "Member spotlight.",
+   "status": "cited",
+   "via": "Selected CV, smritajainart.com"
+  },
+  {
+   "id": "milano-2015",
+   "cats": [
+    "press"
+   ],
+   "title": "What's Next",
+   "source": "Milano NYC",
+   "kind": "Feature",
+   "date": "2015-11",
+   "summary": "Feature (no online link known).",
+   "status": "cited",
+   "via": "Selected CV, smritajainart.com"
+  },
+  {
+   "id": "jersey-journal-2014",
+   "cats": [
+    "press",
+    "company",
+    "art"
+   ],
+   "title": "New art gallery opening in unexpected neighborhood in Jersey City",
+   "source": "The Jersey Journal (NJ.com)",
+   "kind": "News",
+   "date": "2014-05",
+   "url": "https://www.nj.com/hudson/index.ssf/2014/05/new_art_gallery_opening_in_unexpected_neighborhood_in_jersey_city.html",
+   "summary": "Reports the opening of Surmrit Gallery of Art and Design in Newport, Jersey City.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "womens-era-2014",
+   "cats": [
+    "press"
+   ],
+   "title": "Women's Era",
+   "source": "Women's Era",
+   "kind": "Print feature",
+   "date": "2014-04",
+   "summary": "Magazine feature (no online link known).",
+   "status": "cited",
+   "via": "Selected CV, smritajainart.com"
+  },
+  {
+   "id": "little-india-2014",
+   "cats": [
+    "press"
+   ],
+   "title": "I See Them Differently",
+   "source": "Little India",
+   "kind": "Feature",
+   "date": "2014-03",
+   "url": "http://littleindia.com/i-them-differently/",
+   "summary": "Magazine feature.",
+   "status": "cited",
+   "via": "Selected CV, smritajainart.com"
+  },
+  {
+   "id": "pratt-gateway-2013",
+   "cats": [
+    "press"
+   ],
+   "title": "Class Notes, January 2013",
+   "source": "Pratt Gateway",
+   "kind": "Alumni news",
+   "date": "2013-01",
+   "url": "http://gateway.pratt.edu/class-notes-jan13/",
+   "summary": "Pratt alumni class note.",
+   "status": "cited",
+   "via": "Selected CV, smritajainart.com"
+  },
+  {
+   "id": "trade-reporter",
+   "cats": [
+    "press"
+   ],
+   "title": "Trade Reporter",
+   "source": "Trade Reporter",
+   "kind": "Print feature",
+   "date": "2012-12",
+   "summary": "Print coverage in April 2011 and December 2012 (no online link known).",
+   "status": "cited",
+   "via": "Selected CV, smritajainart.com"
+  },
+  {
+   "id": "prattfolio-2011",
+   "cats": [
+    "press"
+   ],
+   "title": "Prattfolio Fall/Winter 2011: Generations",
+   "source": "Pratt Institute",
+   "kind": "Magazine",
+   "date": "2011",
+   "url": "https://issuu.com/prattinstitute/docs/prattfolio-fallwinter-2011-generations/59",
+   "summary": "Featured in Pratt's alumni magazine.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "brainz-contributor",
+   "cats": [
+    "writing",
+    "profiles"
+   ],
+   "title": "Executive Contributor, Brainz Magazine",
+   "source": "Brainz Magazine",
+   "kind": "Contributor profile",
+   "date": "2026",
+   "url": "https://www.brainzmagazine.com/executive-contributor/smrita-jain",
+   "summary": "Invited Executive Contributor writing on technology, AI and business.",
+   "status": "verified",
+   "via": "Contributor page"
+  },
+  {
+   "id": "brainz-adaptability-1",
+   "cats": [
+    "writing",
+    "ai"
+   ],
+   "title": "Why Adaptability Is Your Best Backup Plan in the Age of AI – Part One",
+   "source": "Brainz Magazine",
+   "kind": "Article",
+   "date": "2026",
+   "url": "https://www.brainzmagazine.com/post/why-adaptability-is-your-best-backup-plan-in-the-age-of-ai-part-one",
+   "summary": "On adaptability as a career strategy as AI reshapes work.",
+   "status": "verified",
+   "via": "Listed on contributor page"
+  },
+  {
+   "id": "brainz-adaptability-2",
+   "cats": [
+    "writing",
+    "ai"
+   ],
+   "title": "Why Adaptability Is Your Best Backup Plan in the Age of AI – Part Two",
+   "source": "Brainz Magazine",
+   "kind": "Article",
+   "date": "2026",
+   "url": "https://www.brainzmagazine.com/post/why-adaptability-is-your-best-backup-plan-in-the-age-of-ai-part-two",
+   "summary": "Second part of the series on reinvention in the age of AI.",
+   "status": "verified",
+   "via": "Listed on contributor page"
+  },
+  {
+   "id": "brainz-elite-styles",
+   "cats": [
+    "writing",
+    "company"
+   ],
+   "title": "Elite Styles Fashion Debuts at Delhi's Teej Pop-Up Melas",
+   "source": "Brainz Magazine",
+   "kind": "Business news",
+   "date": "2026",
+   "url": "https://www.brainzmagazine.com/post/elite-styles-fashion-debuts-at-delhi-s-teej-pop-up-melas",
+   "summary": "On the revival of the family label Elite Styles Fashion at Teej pop-up markets in Delhi.",
+   "status": "verified",
+   "via": "Listed on contributor page"
+  },
+  {
+   "id": "brainz-bay-ridge",
+   "cats": [
+    "writing",
+    "community"
+   ],
+   "title": "Protect and Preserve the History of Bay Ridge by Participating in the Rally",
+   "source": "Brainz Magazine",
+   "kind": "Business news",
+   "date": "2026",
+   "url": "https://www.brainzmagazine.com/post/protect-and-preserve-the-history-of-bay-ridge-by-participating-in-the-rally",
+   "summary": "A call to join the community rally to landmark the Visitation Academy and Monastery in Bay Ridge, Brooklyn.",
+   "status": "verified",
+   "via": "Listed on contributor page"
+  },
+  {
+   "id": "garde-2017-fat-bodies",
+   "cats": [
+    "writing"
+   ],
+   "title": "Fat Bodies",
+   "source": "Garde Magazine, Issue 35",
+   "kind": "Article",
+   "date": "2017-12",
+   "url": "https://gardemagazine.com/fat-bodies-%E8%82%A5%E8%83%96%E7%9A%84%E8%BA%AB%E9%AB%94/",
+   "summary": "Essay on body image and fat shaming.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "huffpost-india",
+   "cats": [
+    "writing"
+   ],
+   "title": "Author page, including “Art Is My Cocaine”",
+   "source": "HuffPost India",
+   "kind": "Articles",
+   "date": "2017-10",
+   "url": "https://www.huffingtonpost.in/author/smrita-jain/",
+   "summary": "Contributor writing for HuffPost India.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "forjm-2016",
+   "cats": [
+    "writing",
+    "design"
+   ],
+   "title": "Forgotten Words and Practises in a Designer's Creative World",
+   "source": "forj(m) Marketing Blog, Australia",
+   "kind": "Article",
+   "date": "2016-11",
+   "url": "http://www.forjmblog.com/forgotten-words-practises-designers-creative-world/",
+   "summary": "Guest article on craft vocabulary and habits that designers lose over time.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "creating-durga",
+   "cats": [
+    "books",
+    "art"
+   ],
+   "title": "Creating Durga",
+   "source": "Surmrit Gallery of Art and Design, New York",
+   "kind": "Photo book · ISBN 978-0988600409",
+   "date": "2013-03",
+   "url": "http://www.creatingdurga.com/",
+   "links": [
+    {
+     "label": "Google Books",
+     "url": "https://books.google.com/books?id=c-8MmQEACAAJ"
+    }
+   ],
+   "summary": "Authored and designed photo book on Vedic culture and the deity Durga, told through photographs and text.",
+   "status": "verified",
+   "via": "Pratt faculty profile; Wikipedia",
+   "home_art": 1
+  },
+  {
+   "id": "fat-free-samosa",
+   "cats": [
+    "books",
+    "art"
+   ],
+   "title": "Fat Free Samosa",
+   "source": "Smrita Jain",
+   "kind": "Autobiography & art performance",
+   "date": "2018",
+   "url": "https://www.smritajainart.com/fat-free-samosa",
+   "summary": "Autobiographical project on fat shaming, bullying, marriage, growing up in India and moving to New York; announced as a book in 2018.",
+   "status": "verified",
+   "via": "smritajainart.com",
+   "home_art": 5
+  },
+  {
+   "id": "ai-portfolio",
+   "cats": [
+    "ai",
+    "design",
+    "profiles"
+   ],
+   "title": "AI & product design portfolio",
+   "source": "ai.smritajaindesign.com",
+   "kind": "Portfolio",
+   "date": "2026",
+   "url": "https://ai.smritajaindesign.com/",
+   "summary": "Full case studies in agentic AI, product and experience design.",
+   "status": "verified",
+   "via": "Own site"
+  },
+  {
+   "id": "hdsi-cert",
+   "cats": [
+    "ai",
+    "education"
+   ],
+   "title": "Harvard Data Science Initiative Agentic AI Certification",
+   "source": "Harvard Data Science Initiative",
+   "kind": "Certification · potential completion Dec 2026",
+   "date": "2026",
+   "summary": "Intensive agentic AI program (November 2026 cohort); in progress.",
+   "status": "own-site",
+   "via": "smritajain31.github.io"
+  },
+  {
+   "id": "cs-advocate",
+   "cats": [
+    "ai",
+    "design"
+   ],
+   "title": "ADVOCATE",
+   "source": "Case study",
+   "kind": "Concept product · Agentic AI",
+   "date": "2026",
+   "url": "https://ai.smritajaindesign.com/work/advocate",
+   "summary": "Agentic medication-request concept where specialist agents handle low-risk requests within doctor-set limits.",
+   "status": "verified",
+   "via": "Own site"
+  },
+  {
+   "id": "cs-harborgate",
+   "cats": [
+    "ai",
+    "design"
+   ],
+   "title": "HarborGate",
+   "source": "Case study",
+   "kind": "Self-initiated concept · Agentic AI",
+   "date": "2026",
+   "url": "https://ai.smritajaindesign.com/",
+   "summary": "Driver app and verification API for trucking and port compliance run by seven agents, cutting onboarding from 30 days to 2–4.",
+   "status": "verified",
+   "via": "Own site"
+  },
+  {
+   "id": "cs-npz",
+   "cats": [
+    "ai",
+    "design"
+   ],
+   "title": "NPZ Law Group",
+   "source": "Case study",
+   "kind": "Agentic AI · Legal",
+   "date": "2026",
+   "url": "https://ai.smritajaindesign.com/",
+   "summary": "Immigration-law platform where a conversational assistant runs client intake and attorneys work from a desktop workspace.",
+   "status": "verified",
+   "via": "Own site"
+  },
+  {
+   "id": "cs-craftwords",
+   "cats": [
+    "ai",
+    "design"
+   ],
+   "title": "Craft Words",
+   "source": "craftwords.us",
+   "kind": "AI product",
+   "date": "2026",
+   "url": "https://craftwords.us/",
+   "summary": "Bedtime storytelling experience where families choose words and AI generates a story to read or listen to.",
+   "status": "verified",
+   "via": "Own site"
+  },
+  {
+   "id": "cs-four-seasons",
+   "cats": [
+    "design"
+   ],
+   "title": "Four Seasons Yachts",
+   "source": "Case study",
+   "kind": "Founding product designer · MRM",
+   "date": "2022",
+   "url": "https://ai.smritajaindesign.com/",
+   "summary": "First self-service booking flow for yacht suites, including holds and deposits; the work won an Effie Silver in 2025.",
+   "status": "verified",
+   "via": "Own site"
+  },
+  {
+   "id": "cs-astrazeneca",
+   "cats": [
+    "design"
+   ],
+   "title": "AstraZeneca Tagrisso",
+   "source": "Case study",
+   "kind": "Healthcare",
+   "date": "2022",
+   "url": "https://ai.smritajaindesign.com/",
+   "summary": "Desktop tool guiding an oncologist and lung cancer patient through one shared treatment decision.",
+   "status": "verified",
+   "via": "Own site"
+  },
+  {
+   "id": "cs-camp-kilmer",
+   "cats": [
+    "design"
+   ],
+   "title": "Rutgers University: Camp Kilmer",
+   "source": "Case study",
+   "kind": "Mobile · AR",
+   "date": "2026",
+   "url": "https://ai.smritajaindesign.com/",
+   "summary": "Mobile app bringing WWII Camp Kilmer history to campus through an AR lens, audio tours and an archive.",
+   "status": "verified",
+   "via": "Own site"
+  },
+  {
+   "id": "cs-coca-cola",
+   "cats": [
+    "design"
+   ],
+   "title": "Coca-Cola OneXP",
+   "source": "Case study",
+   "kind": "Design system",
+   "date": "2021",
+   "url": "https://ai.smritajaindesign.com/",
+   "summary": "Experiences in a shared system that unifies content, journeys and interaction patterns across brands.",
+   "status": "verified",
+   "via": "Own site"
+  },
+  {
+   "id": "cs-usps",
+   "cats": [
+    "design"
+   ],
+   "title": "USPS Delivers",
+   "source": "Case study",
+   "kind": "Web · AR/VR",
+   "date": "2021",
+   "url": "https://ai.smritajaindesign.com/",
+   "summary": "Restructured navigation and architecture, searchable tags, microsites and AR/VR experiences.",
+   "status": "verified",
+   "via": "Own site"
+  },
+  {
+   "id": "cs-ey",
+   "cats": [
+    "design"
+   ],
+   "title": "EY Global Tax Platform",
+   "source": "Case study",
+   "kind": "Enterprise",
+   "date": "2020",
+   "url": "https://ai.smritajaindesign.com/",
+   "summary": "Tax-data workflows and dashboards bringing key tax functions into one product.",
+   "status": "verified",
+   "via": "Own site"
+  },
+  {
+   "id": "trad-portfolio",
+   "cats": [
+    "design",
+    "profiles"
+   ],
+   "title": "Traditional design portfolio",
+   "source": "smritajaindesign.com",
+   "kind": "Portfolio",
+   "date": "2018",
+   "url": "https://www.smritajaindesign.com/",
+   "summary": "Earlier portfolio of brand, graphic and UX work.",
+   "status": "verified",
+   "via": "Linked from AI portfolio"
+  },
+  {
+   "id": "ateem-typeface",
+   "cats": [
+    "design",
+    "awards"
+   ],
+   "title": "Ateem typeface",
+   "source": "DesignFirms",
+   "kind": "Typeface · Graphic Design Award, first position",
+   "date": "2016-03",
+   "url": "https://www.designfirms.org/awards/graphic/archive/2016/03/show/11756/ateem-typeface-design-by-smrita-jain/",
+   "summary": "Typeface design that took first position in DesignFirms' graphic design awards.",
+   "status": "cited",
+   "via": "Wikipedia references 1, 8"
+  },
+  {
+   "id": "art-site",
+   "cats": [
+    "art",
+    "profiles"
+   ],
+   "title": "Smrita Jain Art",
+   "source": "smritajainart.com",
+   "kind": "Artist website",
+   "date": "2026",
+   "url": "https://www.smritajainart.com/",
+   "summary": "Paintings, installations, artist statement and selected CV.",
+   "status": "verified",
+   "via": "Own site"
+  },
+  {
+   "id": "art-cliffs",
+   "cats": [
+    "art"
+   ],
+   "title": "In the cliffs I will find peace",
+   "source": "smritajainart.com",
+   "kind": "Painting series",
+   "date": "2026",
+   "url": "https://www.smritajainart.com/in-the-cliffs-i-will-find-peace",
+   "summary": "Painting series.",
+   "status": "verified",
+   "via": "Own site",
+   "home_art": 2
+  },
+  {
+   "id": "art-unapologetic",
+   "cats": [
+    "art"
+   ],
+   "title": "Unapologetic Flowers",
+   "source": "smritajainart.com",
+   "kind": "Painting series",
+   "date": "2026",
+   "url": "https://www.smritajainart.com/unapologetic-flowers",
+   "summary": "Painting series.",
+   "status": "verified",
+   "via": "Own site",
+   "home_art": 3
+  },
+  {
+   "id": "art-family",
+   "cats": [
+    "art"
+   ],
+   "title": "Family Sketches",
+   "source": "smritajainart.com",
+   "kind": "Drawings",
+   "date": "2026",
+   "url": "https://www.smritajainart.com/family-sketches",
+   "summary": "Sketch series.",
+   "status": "verified",
+   "via": "Own site",
+   "home_art": 6
+  },
+  {
+   "id": "art-elmyra",
+   "cats": [
+    "art",
+    "company"
+   ],
+   "title": "Elmyra #1",
+   "source": "TAG Studio Store",
+   "kind": "Acrylic painting",
+   "date": "2026",
+   "url": "https://store.theaquariogroup.com/products/elmyra-1-artist-acrylic-painting-frame-not-included",
+   "summary": "A return to figurative painting and a tribute to her grey cat.",
+   "status": "verified",
+   "via": "Store listing"
+  },
+  {
+   "id": "art-tippy",
+   "cats": [
+    "art",
+    "awards"
+   ],
+   "title": "Tippy Tippy Tap Tap",
+   "source": "smritajainart.com",
+   "kind": "Wall art installation",
+   "date": "2016",
+   "url": "https://www.smritajainart.com/tippy-tippy-tap-tap",
+   "summary": "Installation that received an Honorary Mention at the London International Creative awards, January 2016.",
+   "status": "verified",
+   "via": "Own site; LICC listing",
+   "home_art": 4
+  },
+  {
+   "id": "art-non-gujarati-jains",
+   "cats": [
+    "art"
+   ],
+   "title": "The Non-Gujarati Jains",
+   "source": "New York State Traditions",
+   "kind": "Film · cultural fieldwork",
+   "url": "https://nytraditions.org/cultural-protocol/smrita-jain",
+   "summary": "A fieldwork project exploring cultural traditions.",
+   "status": "own-site",
+   "via": "Linked from smritajain31.github.io"
+  },
+  {
+   "id": "ex-nehru-2017",
+   "cats": [
+    "art"
+   ],
+   "title": "Creating Durga",
+   "source": "The Nehru Centre, High Commission of India, London",
+   "kind": "Exhibition",
+   "date": "2017-09",
+   "summary": "Exhibition of Creating Durga photographs in London.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "ex-royal-opera-2016",
+   "cats": [
+    "art"
+   ],
+   "title": "Art & Colors",
+   "source": "Royal Opera Arcade Gallery, London",
+   "kind": "Exhibition",
+   "date": "2016-09",
+   "summary": "Group exhibition in London.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "ex-surmrit-2015",
+   "cats": [
+    "art"
+   ],
+   "title": "Exhibition at Surmrit Gallery of Art and Design",
+   "source": "Jersey City, NJ",
+   "kind": "Exhibition",
+   "date": "2015-11",
+   "summary": "Exhibition at her gallery.",
+   "status": "cited",
+   "via": "Selected CV"
+  },
+  {
+   "id": "ex-pratt-alumni-2015",
+   "cats": [
+    "art"
+   ],
+   "title": "Pratt Alumni Exhibition",
+   "source": "The Juliana Curran Terian Design Center Pavilion, Brooklyn",
+   "kind": "Exhibition",
+   "date": "2015-09",
+   "url": "https://issuu.com/prattinstitute/docs/alumni_day_gallery_guide",
+   "summary": "Alumni Day group exhibition.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "ex-berger-2014",
+   "cats": [
+    "art"
+   ],
+   "title": "Group exhibition",
+   "source": "The Arthur M. Berger Art Gallery, Manhattanville College, NY",
+   "kind": "Exhibition",
+   "date": "2014-12",
+   "summary": "Group exhibition.",
+   "status": "cited",
+   "via": "Selected CV"
+  },
+  {
+   "id": "ex-crossing-2014",
+   "cats": [
+    "art"
+   ],
+   "title": "Group exhibition",
+   "source": "Crossing Art, Queens, NY",
+   "kind": "Exhibition",
+   "date": "2014-07",
+   "summary": "Group exhibition.",
+   "status": "cited",
+   "via": "Selected CV"
+  },
+  {
+   "id": "ex-art-mall-2014",
+   "cats": [
+    "art"
+   ],
+   "title": "Group exhibition",
+   "source": "Art Mall, New Delhi",
+   "kind": "Exhibition",
+   "date": "2014-06",
+   "summary": "Group exhibition in India.",
+   "status": "cited",
+   "via": "Selected CV"
+  },
+  {
+   "id": "ex-queens-2014",
+   "cats": [
+    "art"
+   ],
+   "title": "Erasing Borders 2014: Contemporary Indian Art of the Diaspora",
+   "source": "Queens Museum (IAAC)",
+   "kind": "Exhibition",
+   "date": "2014-01",
+   "url": "https://iaac.us/erasing_borders_2014/Smritajain/bio.htm",
+   "summary": "Group exhibition of diaspora artists presented by the Indo-American Arts Council.",
+   "status": "verified",
+   "via": "IAAC artist page"
+  },
+  {
+   "id": "ex-alumni-fair-2013",
+   "cats": [
+    "art",
+    "books"
+   ],
+   "title": "Juried Second Annual Alumni Art, Design and Book Fair",
+   "source": "Pratt Institute",
+   "kind": "Exhibition",
+   "date": "2013-09",
+   "summary": "Juried book exhibition showing Creating Durga.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "ex-javits-2012",
+   "cats": [
+    "art"
+   ],
+   "title": "Contemporary Art Fair",
+   "source": "Javits Center, New York",
+   "kind": "Art fair",
+   "date": "2012-10",
+   "summary": "Group exhibition at the Contemporary Art Fair.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "ex-pratt-manhattan-2011",
+   "cats": [
+    "art"
+   ],
+   "title": "First solo exhibition",
+   "source": "Pratt Manhattan Gallery, New York",
+   "kind": "Solo exhibition",
+   "date": "2011-05",
+   "summary": "Her first solo exhibition.",
+   "status": "verified",
+   "via": "Transformation Network guest profile; Selected CV"
+  },
+  {
+   "id": "ex-best-design-2010",
+   "cats": [
+    "art",
+    "design"
+   ],
+   "title": "Juried Annual Best Design Showcase",
+   "source": "Manhattan Center, New York",
+   "kind": "Showcase",
+   "date": "2010-05",
+   "summary": "Juried design showcase.",
+   "status": "cited",
+   "via": "Selected CV"
+  },
+  {
+   "id": "ex-beyond-sea",
+   "cats": [
+    "art"
+   ],
+   "title": "Beyond the Sea",
+   "source": "Pratt Fine Arts Gallery, Brooklyn",
+   "kind": "Group exhibition",
+   "date": "2007-12",
+   "summary": "Photographs from Creating Durga shown in a Pratt group exhibition.",
+   "status": "verified",
+   "via": "Coroflot profile; Selected CV"
+  },
+  {
+   "id": "tag",
+   "cats": [
+    "company"
+   ],
+   "title": "The Aquario Group (TAG)",
+   "source": "theaquariogroup.com",
+   "kind": "Founder · Creative & Experience Director",
+   "date": "2010",
+   "url": "https://www.theaquariogroup.com/",
+   "summary": "Independent Brooklyn-based strategy, design and experience consultancy she founded; the vision began in New Delhi in 2005 and the firm was formally established in 2010.",
+   "status": "verified",
+   "via": "TAG website"
+  },
+  {
+   "id": "tag-store",
+   "cats": [
+    "company",
+    "art"
+   ],
+   "title": "TAG Studio Store",
+   "source": "store.theaquariogroup.com",
+   "kind": "Artist-led online store",
+   "date": "2026",
+   "url": "https://store.theaquariogroup.com/",
+   "summary": "TAG's first online store, rooted in craft and intentional living, with products she creates, designs or curates.",
+   "status": "verified",
+   "via": "Store; Wikipedia"
+  },
+  {
+   "id": "tag-insights",
+   "cats": [
+    "company",
+    "talks"
+   ],
+   "title": "Insights & guides",
+   "source": "The Aquario Group",
+   "kind": "Workshops hub",
+   "date": "2026",
+   "url": "https://www.theaquariogroup.com/#insights",
+   "summary": "TAG's hub for workshops, recordings and downloadable guides.",
+   "status": "verified",
+   "via": "TAG website"
+  },
+  {
+   "id": "tag-book-call",
+   "cats": [
+    "company",
+    "profiles"
+   ],
+   "title": "Book a 30-minute call",
+   "source": "cal.com",
+   "kind": "Contact",
+   "date": "2026",
+   "url": "https://cal.com/smrita-jain-w0mzox/30min",
+   "summary": "Schedule a call with Smrita.",
+   "status": "verified",
+   "via": "Linked from TAG and the AI portfolio"
+  },
+  {
+   "id": "surmrit-gallery",
+   "cats": [
+    "company",
+    "art"
+   ],
+   "title": "Surmrit Gallery of Art and Design",
+   "source": "surmritgallery.com",
+   "kind": "Artist-led gallery",
+   "date": "2014-05-29",
+   "url": "http://surmritgallery.com/",
+   "summary": "Gallery she opened in Newport, Jersey City, in May 2014, later in Brooklyn and Manhattan; publisher of Creating Durga.",
+   "status": "verified",
+   "via": "Transformation Network guest profile; Wikipedia"
+  },
+  {
+   "id": "teach-pratt-vap",
+   "cats": [
+    "teaching"
+   ],
+   "title": "Visiting Assistant Professor",
+   "source": "Pratt Institute",
+   "kind": "Graduate Communications Design",
+   "date": "2023-01",
+   "end": "2024-05",
+   "url": "https://www.pratt.edu/people/smrita-jain/",
+   "summary": "Taught design management to graduate students.",
+   "status": "verified",
+   "via": "Pratt faculty profile; Wikipedia"
+  },
+  {
+   "id": "teach-springboard",
+   "cats": [
+    "teaching"
+   ],
+   "title": "UX/UI Design Instructor & Mentor",
+   "source": "Springboard",
+   "kind": "Online",
+   "date": "2021-10",
+   "end": "2023-12",
+   "summary": "Mentored students one-to-one through a nine-month UI/UX career program.",
+   "status": "verified",
+   "via": "Pratt faculty profile"
+  },
+  {
+   "id": "teach-designlab",
+   "cats": [
+    "teaching"
+   ],
+   "title": "UX Design Mentor",
+   "source": "Designlab",
+   "kind": "Online",
+   "date": "2020-12",
+   "end": "2026-10",
+   "url": "https://app.designlab.com/smritajain",
+   "summary": "Weekly mentoring for UX Academy students, including research, strategy and career services.",
+   "status": "verified",
+   "via": "Designlab mentor profile"
+  },
+  {
+   "id": "teach-cnu",
+   "cats": [
+    "teaching",
+    "talks"
+   ],
+   "title": "Guest lecturer",
+   "source": "Christopher Newport University, Virginia",
+   "kind": "Guest lecture",
+   "date": "2018-03",
+   "summary": "Guest lecture alongside the Global Status of Women and Girls conference.",
+   "status": "verified",
+   "via": "Pratt faculty profile"
+  },
+  {
+   "id": "teach-fit",
+   "cats": [
+    "teaching"
+   ],
+   "title": "Judge and reviewer",
+   "source": "Fashion Institute of Technology and St. John's University, New York",
+   "kind": "Juror",
+   "date": "2011",
+   "end": "2013",
+   "summary": "Reviewed and judged student work.",
+   "status": "verified",
+   "via": "Pratt faculty profile; Wikipedia"
+  },
+  {
+   "id": "teach-pratt-lecturer",
+   "cats": [
+    "teaching"
+   ],
+   "title": "Assistant Lecturer",
+   "source": "Pratt Institute",
+   "kind": "Teaching",
+   "date": "2011",
+   "summary": "Assistant lecturer after graduating.",
+   "status": "cited",
+   "via": "Wikipedia"
+  },
+  {
+   "id": "teach-aiga-mentor",
+   "cats": [
+    "teaching",
+    "community"
+   ],
+   "title": "AIGA design mentor",
+   "source": "High School of Art and Design, New York",
+   "kind": "Mentoring",
+   "date": "2010-11",
+   "summary": "Mentored high-school design students through AIGA.",
+   "status": "cited",
+   "via": "Wikipedia"
+  },
+  {
+   "id": "teach-pratt-ga",
+   "cats": [
+    "teaching"
+   ],
+   "title": "Graduate Assistant",
+   "source": "Pratt Institute",
+   "kind": "Teaching",
+   "date": "2008-01",
+   "end": "2009-12",
+   "summary": "Graduate assistantship during her MS.",
+   "status": "cited",
+   "via": "Wikipedia"
+  },
+  {
+   "id": "edu-pratt",
+   "cats": [
+    "education"
+   ],
+   "title": "MS, Communications Design",
+   "source": "Pratt Institute, New York",
+   "kind": "Degree",
+   "date": "2010",
+   "summary": "Master of Science in Communications Design.",
+   "status": "verified",
+   "via": "Pratt faculty profile"
+  },
+  {
+   "id": "edu-apeejay",
+   "cats": [
+    "education"
+   ],
+   "title": "Bachelor of Design, Graphic Design",
+   "source": "Apeejay Institute of Design (Guru Nanak Dev University), New Delhi",
+   "kind": "Degree",
+   "date": "2006",
+   "summary": "Undergraduate design degree.",
+   "status": "own-site",
+   "via": "smritajain31.github.io; Wikipedia"
+  },
+  {
+   "id": "edu-gargi",
+   "cats": [
+    "education"
+   ],
+   "title": "BA, Political Science",
+   "source": "Gargi College, University of Delhi",
+   "kind": "Degree",
+   "date": "2003",
+   "summary": "Undergraduate degree in political science.",
+   "status": "own-site",
+   "via": "smritajain31.github.io; Wikipedia"
+  },
+  {
+   "id": "edu-arena",
+   "cats": [
+    "education"
+   ],
+   "title": "Certified Web Professional",
+   "source": "Arena Multimedia",
+   "kind": "Certificate",
+   "date": "2003",
+   "summary": "Web design certificate.",
+   "status": "cited",
+   "via": "Wikipedia"
+  },
+  {
+   "id": "edu-uxdi",
+   "cats": [
+    "education"
+   ],
+   "title": "Professional Diploma in UX Design",
+   "source": "UX Design Institute (Glasgow Caledonian University)",
+   "kind": "Diploma",
+   "date": "2021",
+   "summary": "Professional UX diploma.",
+   "status": "own-site",
+   "via": "smritajain31.github.io"
+  },
+  {
+   "id": "edu-ibm",
+   "cats": [
+    "education"
+   ],
+   "title": "Enterprise Design Thinking",
+   "source": "IBM",
+   "kind": "Certificate",
+   "date": "2021",
+   "summary": "Design thinking certification.",
+   "status": "own-site",
+   "via": "smritajain31.github.io"
+  },
+  {
+   "id": "edu-elvtr",
+   "cats": [
+    "education"
+   ],
+   "title": "UX/UI for Gaming",
+   "source": "ELVTR",
+   "kind": "Course",
+   "summary": "Course in game UX and UI.",
+   "status": "own-site",
+   "via": "smritajain31.github.io"
+  },
+  {
+   "id": "award-effie-2025",
+   "cats": [
+    "awards",
+    "design"
+   ],
+   "title": "Effie Silver, Digital Commerce Services",
+   "source": "Effie Awards",
+   "kind": "Award",
+   "date": "2025-06",
+   "summary": "For the Four Seasons Yachts booking platform.",
+   "status": "own-site",
+   "via": "smritajain31.github.io"
+  },
+  {
+   "id": "award-ana-b2-2025",
+   "cats": [
+    "awards"
+   ],
+   "title": "ANA B2 Awards, Category of One",
+   "source": "ANA",
+   "kind": "Award",
+   "date": "2025",
+   "summary": "B2B marketing award.",
+   "status": "own-site",
+   "via": "smritajain31.github.io"
+  },
+  {
+   "id": "award-agda-2017",
+   "cats": [
+    "awards"
+   ],
+   "title": "54th American Graphic Design Award",
+   "source": "GDUSA",
+   "kind": "Award",
+   "date": "2017-10",
+   "url": "https://contests.gdusa.com/gdusa-contest-winner?cc=agda17&ids=0%7C1603212&iy=&im=",
+   "summary": "American Graphic Design Awards winner.",
+   "status": "cited",
+   "via": "Wikipedia reference 4"
+  },
+  {
+   "id": "award-creativity-2017",
+   "cats": [
+    "awards"
+   ],
+   "title": "47th Creativity International Award, Gold",
+   "source": "Creativity International",
+   "kind": "Award",
+   "date": "2017-10",
+   "url": "https://creativityawards.com/?submission=incredible-india",
+   "summary": "Gold award for an Incredible India entry.",
+   "status": "cited",
+   "via": "Wikipedia reference 5"
+  },
+  {
+   "id": "award-summit",
+   "cats": [
+    "awards"
+   ],
+   "title": "Summit International Creative Award, Silver (Government Marketing)",
+   "source": "Summit International Awards",
+   "kind": "Award",
+   "date": "2016",
+   "url": "https://summitawards.com/past-sca-awards-listings/",
+   "summary": "Silver in government marketing; also recognised in 2017.",
+   "status": "cited",
+   "via": "Wikipedia reference 6"
+  },
+  {
+   "id": "award-licc-2016",
+   "cats": [
+    "awards",
+    "art"
+   ],
+   "title": "London International Creative, Honorary Mention",
+   "source": "London International Creative Competition",
+   "kind": "Award",
+   "date": "2016-01",
+   "url": "http://www.licc.us/en/zoom.php?eid=2-20748-16",
+   "summary": "For the wall installation Tippy Tippy Tap Tap.",
+   "status": "cited",
+   "via": "Selected CV; Wikipedia"
+  },
+  {
+   "id": "award-aiga-2016",
+   "cats": [
+    "awards"
+   ],
+   "title": "Design Leader",
+   "source": "AIGA",
+   "kind": "Recognition",
+   "date": "2016",
+   "url": "https://www.aiga.org/general/profile/?uid=141293",
+   "summary": "Named a Design Leader by AIGA.",
+   "status": "cited",
+   "via": "Wikipedia"
+  },
+  {
+   "id": "landmark-visitation",
+   "cats": [
+    "community",
+    "company"
+   ],
+   "title": "Landmark Visitation Initiative merchandise",
+   "source": "TAG Studio Store",
+   "kind": "Fundraising design",
+   "date": "2026",
+   "url": "https://store.theaquariogroup.com/",
+   "summary": "Pins, bags, caps and totes designed to support the campaign to landmark Visitation Academy and Monastery in Bay Ridge, with all sales donated to the initiative.",
+   "status": "own-site",
+   "via": "TAG Studio Store"
+  },
+  {
+   "id": "sickle-cell",
+   "cats": [
+    "community"
+   ],
+   "title": "Creative Director (volunteer)",
+   "source": "Sickle Cell International Foundation, New York",
+   "kind": "Volunteer",
+   "date": "2020-09",
+   "summary": "Volunteer creative direction for the foundation.",
+   "status": "cited",
+   "via": "Resume hosted by Pratt (2022)"
+  },
+  {
+   "id": "p-wikipedia",
+   "cats": [
+    "profiles"
+   ],
+   "title": "Wikipedia",
+   "source": "en.wikipedia.org",
+   "kind": "Encyclopedia article",
+   "url": "https://en.wikipedia.org/wiki/Smrita_Jain",
+   "summary": "Encyclopedia article.",
+   "status": "verified",
+   "via": "Primary reference"
+  },
+  {
+   "id": "p-linkedin",
+   "cats": [
+    "profiles"
+   ],
+   "title": "LinkedIn",
+   "source": "linkedin.com",
+   "kind": "Professional profile",
+   "url": "https://www.linkedin.com/in/smritajain/",
+   "summary": "Professional profile.",
+   "status": "verified",
+   "via": "Own link"
+  },
+  {
+   "id": "p-github",
+   "cats": [
+    "profiles",
+    "ai"
+   ],
+   "title": "GitHub",
+   "source": "github.com",
+   "kind": "Code & open source",
+   "url": "https://github.com/smritajain31",
+   "summary": "Prototypes, this archive, and open-source UI work.",
+   "status": "verified",
+   "via": "Own link"
+  },
+  {
+   "id": "p-tag-linkedin",
+   "cats": [
+    "profiles",
+    "company"
+   ],
+   "title": "The Aquario Group on LinkedIn",
+   "source": "linkedin.com",
+   "kind": "Company page",
+   "url": "https://www.linkedin.com/company/aquario-group",
+   "summary": "Company page.",
+   "status": "verified",
+   "via": "TAG website"
+  },
+  {
+   "id": "p-instagram",
+   "cats": [
+    "profiles",
+    "company"
+   ],
+   "title": "@aquariogroup on Instagram",
+   "source": "instagram.com",
+   "kind": "Social",
+   "url": "https://www.instagram.com/aquariogroup",
+   "summary": "TAG on Instagram.",
+   "status": "verified",
+   "via": "TAG website"
+  },
+  {
+   "id": "p-facebook",
+   "cats": [
+    "profiles",
+    "company"
+   ],
+   "title": "The Aquario Group on Facebook",
+   "source": "facebook.com",
+   "kind": "Social",
+   "url": "https://www.facebook.com/theaquariogroup",
+   "summary": "TAG on Facebook.",
+   "status": "verified",
+   "via": "TAG website"
+  },
+  {
+   "id": "p-pratt",
+   "cats": [
+    "profiles",
+    "teaching"
+   ],
+   "title": "Pratt Institute faculty profile",
+   "source": "pratt.edu",
+   "kind": "Faculty profile",
+   "url": "https://www.pratt.edu/people/smrita-jain/",
+   "summary": "Faculty biography.",
+   "status": "verified",
+   "via": "Pratt"
+  },
+  {
+   "id": "p-gdusa-gallery",
+   "cats": [
+    "profiles",
+    "design"
+   ],
+   "title": "GDUSA designer gallery",
+   "source": "gallery.gdusa.com",
+   "kind": "Portfolio",
+   "url": "https://gallery.gdusa.com/designer/smrita-jain",
+   "summary": "Design work shown on GDUSA.",
+   "status": "verified",
+   "via": "Linked from smritajain31.github.io"
+  },
+  {
+   "id": "p-behance",
+   "cats": [
+    "profiles",
+    "design"
+   ],
+   "title": "Behance",
+   "source": "behance.net",
+   "kind": "Portfolio",
+   "url": "https://www.behance.net/smritajain",
+   "summary": "Design portfolio.",
+   "status": "cited",
+   "via": "Wikipedia reference 15"
+  },
+  {
+   "id": "p-coroflot",
+   "cats": [
+    "profiles",
+    "design"
+   ],
+   "title": "Coroflot",
+   "source": "coroflot.com",
+   "kind": "Portfolio",
+   "url": "https://www.coroflot.com/smritajain/profile",
+   "summary": "Designer profile.",
+   "status": "verified",
+   "via": "Coroflot"
+  },
+  {
+   "id": "p-designlab",
+   "cats": [
+    "profiles",
+    "teaching"
+   ],
+   "title": "Designlab mentor profile",
+   "source": "designlab.com",
+   "kind": "Mentor profile",
+   "url": "https://app.designlab.com/smritajain",
+   "summary": "Mentor profile with student testimonials.",
+   "status": "verified",
+   "via": "Designlab"
+  },
+  {
+   "id": "p-artrabbit",
+   "cats": [
+    "profiles",
+    "art"
+   ],
+   "title": "ArtRabbit",
+   "source": "artrabbit.com",
+   "kind": "Artist profile",
+   "url": "https://www.artrabbit.com/people/smrita-jain-s/artist",
+   "summary": "Exhibition listings.",
+   "status": "cited",
+   "via": "Wikipedia reference 17"
+  },
+  {
+   "id": "p-natgeo",
+   "cats": [
+    "profiles",
+    "art"
+   ],
+   "title": "National Geographic Your Shot",
+   "source": "nationalgeographic.com",
+   "kind": "Photography community",
+   "date": "2016-01",
+   "url": "http://yourshot.nationalgeographic.com/profile/1230104/",
+   "summary": "Photography community profile.",
+   "status": "cited",
+   "via": "Selected CV"
+  },
+  {
+   "id": "p-transformation",
+   "cats": [
+    "profiles",
+    "talks"
+   ],
+   "title": "Transformation Network guest profile",
+   "source": "thetransformationnetwork.com",
+   "kind": "Guest profile",
+   "url": "https://www.thetransformationnetwork.com/ttrevelution/guest/smrita-jain-4334/",
+   "summary": "Radio guest biography.",
+   "status": "verified",
+   "via": "Transformation Network"
+  }
+ ]
 }

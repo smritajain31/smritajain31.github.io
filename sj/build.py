@@ -124,7 +124,9 @@ def entry_html(e, links, today, show_cats=True, cat_labels=None):
         f'<div class="when">{esc(fmt_range(e))}</div>'
         f'<div class="what"><h3>{t}</h3><div class="meta">{meta}</div>'
         f'<p>{esc(e["summary"])}</p>'
-        f'<div class="foot">{"".join(badges)}{"".join(extra)}{also}</div></div></li>'
+        + (('<ul class="about">' + "".join(f"<li>{esc(a)}</li>" for a in e["about"]) + "</ul>") if e.get("about") and is_upcoming(e, today) else "")
+        + (f'<p class="note-line">{esc(e["note"])}</p>' if e.get("note") and is_upcoming(e, today) else "")
+        + f'<div class="foot">{"".join(badges)}{"".join(extra)}{also}</div></div></li>'
     )
 
 
@@ -145,6 +147,7 @@ ARCHIVE_CSS = """
 .cta{background:var(--pink);color:#fff!important;text-decoration:none;padding:6px 12px;border-radius:5px;font-weight:600}.cta:hover{background:#b0106c}
 .also{color:#766a70}
 .upnext{border:1px solid #f2b6d4;background:var(--pale);padding:20px 22px;margin:26px 0 0}.upnext .entries .entry{border-top:0;padding:6px 0}
+.about{margin:0 0 8px;padding-left:20px;font-size:14px}.note-line{font-size:13px;color:#675a62;margin:0 0 10px}
 .legend{font-size:14px;color:#4d4349}.legend li{margin:6px 0}
 .empty{display:none;padding:30px 0;color:#675a62}
 @media(max-width:1000px){.layout{grid-template-columns:1fr}.infobox{position:static;order:-1}}
@@ -186,7 +189,7 @@ def render_archive(data, links, base_css, today):
 
     up_html = ""
     if upcoming:
-        up_html = ('<div class="upnext"><div class="eyebrow">Coming up</div><ul class="entries">'
+        up_html = ('<div class="upnext" id="upcoming"><div class="eyebrow">Upcoming</div><ul class="entries">'
                    + "".join(entry_html(e, links, today, show_cats=False) for e in upcoming) + "</ul></div>")
 
     s = data["subject"]
@@ -227,7 +230,7 @@ def render_archive(data, links, base_css, today):
 <a class="side-name" href="../">SMRITA JAIN</a>
 <img class="side-portrait" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Smrita-jain.jpg" alt="Smrita Jain" draggable="false" oncontextmenu="return false">
 <details class="side-menu" open><summary>Explore the archive <span aria-hidden="true">☰</span></summary>
-<nav class="side-links" aria-label="Archive sections"><a href="../">← Home</a><a href="#top">Overview</a>{side}</nav></details>
+<nav class="side-links" aria-label="Archive sections"><a href="../">← Home</a><a href="#top">Overview</a>{'<a href="#upcoming">Upcoming</a>' if upcoming else ''}{side}</nav></details>
 </aside>
 <main id="top">
 <div class="wrap">
@@ -303,7 +306,7 @@ def render_home_talks(data, links, today):
         tag = '<span class="sj-up">Upcoming</span> ' if upcoming else ""
         return f'<div class="row"><strong>{tag}{t}</strong><span>{esc(e["source"])} · {when}</span></div>'
 
-    up_rows = "".join(row(e, True) for e in up)
+    up_rows = ""  # upcoming items live in the Upcoming section
     return (
         '<section class="section" id="talks">'
         '<div class="eyebrow">On stage, on air, on Zoom</div>'
@@ -313,6 +316,66 @@ def render_home_talks(data, links, today):
         '<p><a href="archive/#talks">See every talk and interview in the archive ↗</a></p>'
         "</section>"
     )
+
+
+WEEKDAYS = "Monday Tuesday Wednesday Thursday Friday Saturday Sunday".split()
+
+
+def render_home_upcoming(data, today):
+    up = sorted([e for e in data["entries"] if is_upcoming(e, today)], key=lambda e: e["date"])
+    head = ('<section class="section" id="upcoming"><div class="eyebrow">Save the date</div>'
+            '<h2>Upcoming <span class="emoji" aria-hidden="true">📅</span></h2>')
+    if not up:
+        return head + ('<p>Nothing is scheduled right now. New workshops, talks and exhibitions appear here first.</p>'
+                       '<p><a href="archive/#talks">See past talks and workshops ↗</a></p></section>')
+    cards = []
+    for e in up:
+        d = dt.date.fromisoformat(e["date"])
+        about = "".join(f"<li>{esc(a)}</li>" for a in e.get("about", []))
+        cta = (f'<a class="up-cta" href="{esc(e["url"])}" rel="noopener">{esc(e.get("cta", "Details"))} ↗</a>'
+               if e.get("url") else "")
+        cards.append(
+            '<article class="up-card">'
+            f'<div class="up-date" aria-hidden="true"><span>{MONTHS[d.month - 1]}</span><strong>{d.day}</strong><span>{WEEKDAYS[d.weekday()][:3]}</span></div>'
+            '<div class="up-body">'
+            f'<small>{esc(e.get("kind", ""))} · {esc(e["source"])}</small>'
+            f'<h3>{esc(e["title"])}</h3>'
+            f'<div class="up-when">{esc(WEEKDAYS[d.weekday()])}, {esc(fmt_date(e["date"]))}{(" · " + esc(e["time"])) if e.get("time") else ""}</div>'
+            f'<p>{esc(e["summary"])}</p>'
+            + (f'<div class="up-about"><strong>What we’ll cover</strong><ul>{about}</ul></div>' if about else "")
+            + (f'<p class="up-note">{esc(e["note"])}</p>' if e.get("note") else "")
+            + cta + "</div></article>")
+    return head + "".join(cards) + "</section>"
+
+
+def render_home_art(data):
+    ents = data["entries"]
+    cards = sorted([e for e in ents if e.get("home_art")], key=lambda e: e["home_art"])
+    tiles = ["", " two", " three"]
+    card_html = "".join(
+        f'<a class="card" href="{esc(e.get("url", "https://www.smritajainart.com/"))}" rel="noopener">'
+        f'<div class="art{tiles[i % 3]}">{esc(e["title"])}</div><div class="cardbody">'
+        f'<small>{esc((e.get("kind") or "").split(" · ")[0].upper())}</small>'
+        f'<p>{esc(e["summary"]) if len(e["summary"]) > 30 else "See the work on smritajainart.com"} ↗</p></div></a>'
+        for i, e in enumerate(cards))
+    ex = sorted([e for e in ents if "art" in e["cats"] and re.search(r"exhibition|art fair|showcase", (e.get("kind") or ""), re.I)],
+                key=sort_key, reverse=True)
+    rows = "".join(
+        f'<div class="row"><strong>{esc(e["title"])}</strong><span>{esc(e["source"])} · {esc(fmt_date(e.get("date")))}</span></div>'
+        for e in ex)
+    return (
+        '<section class="section" id="art"><div class="eyebrow">Paintings, installations, performance &amp; photography</div>'
+        '<h2>Art &amp; exhibitions <span class="emoji" aria-hidden="true">🖼️</span></h2>'
+        f'<div class="grid">{card_html}</div>'
+        f'<h3 class="art-sub">Exhibitions</h3><div class="rows">{rows}</div>'
+        '<div class="links art-links">'
+        '<a href="https://www.smritajainart.com/">smritajainart.com ↗</a>'
+        '<a href="https://www.smritajainart.com/paintings">Paintings ↗</a>'
+        '<a href="https://www.smritajainart.com/installations-art-performance">Installations &amp; performance ↗</a>'
+        '<a href="https://www.smritajainart.com/artist-statement">Artist statement ↗</a>'
+        '<a href="https://www.smritajainart.com/selected-cv">Selected CV ↗</a>'
+        '<a href="archive/#art">All art in the archive ↗</a>'
+        "</div></section>")
 
 
 def replace_block(text, name, new):
@@ -337,6 +400,8 @@ def main():
     base_css = re.search(r"<style>(.*?)</style>", home, re.S).group(1)
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(render_archive(data, links, base_css, today))
+    home = replace_block(home, "upcoming", render_home_upcoming(data, today))
+    home = replace_block(home, "art", render_home_art(data))
     home = replace_block(home, "talks", render_home_talks(data, links, today))
     home = replace_block(home, "count", f'{len(data["entries"])} entries')
     HOME.write_text(home)

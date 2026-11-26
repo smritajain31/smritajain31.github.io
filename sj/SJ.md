@@ -32,8 +32,13 @@ Smrita Rani Borah, Payal Jain, and other designers or artists named Jain. Unrela
 3. **Verify.** Open every candidate page. Keep it only if it clearly refers to her or TAG
    (two identity anchors). Record the source's own date, title and publication.
 4. **Classify** into the categories in `archive.json` (`cats[0]` is the main section; add
-   secondary categories for cross-listing). Upcoming workshops and talks go in `talks`
-   with a full `YYYY-MM-DD` date, a `time` and a `cta` such as "Register".
+   secondary categories for cross-listing). Anything with a future full `YYYY-MM-DD` date
+   (workshops, talks, exhibitions, launches) shows automatically in the home page's
+   **Upcoming** section. Give it a `time`, a `cta` such as "Register" with the sign-up
+   link, `about` (2–5 short bullets on what it covers, taken from the event page) and a
+   `note` (price, format, registration deadline). Exhibitions use `cats` `["art", ...]`
+   and a `kind` containing "Exhibition" so they also appear under Art & exhibitions.
+   Paintings or series to feature as cards on the home page get `home_art` (order).
 5. **Write the entry** (fields: `id`, `cats`, `title`, `source`, `kind`, `date`, `url`,
    `summary`, `status`, `via`). Rules:
    - `summary`: one factual sentence in SJ's own words. No praise, no adjectives the
