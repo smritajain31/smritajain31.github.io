@@ -752,8 +752,8 @@
    "source": "Case study",
    "kind": "Self-initiated concept · Agentic AI",
    "date": "2026",
-   "url": "https://ai.smritajaindesign.com/",
-   "summary": "Driver app and verification API for trucking and port compliance run by seven agents, cutting onboarding from 30 days to 2–4.",
+   "url": "https://ai.smritajaindesign.com/work/harborgate",
+   "summary": "Driver app and verification API for trucking and port compliance run by seven agents, projected to cut time to clearance from about 30 days to 2–4.",
    "status": "verified",
    "via": "Own site"
   },
@@ -767,7 +767,7 @@
    "source": "Case study",
    "kind": "Agentic AI · Legal",
    "date": "2026",
-   "url": "https://ai.smritajaindesign.com/",
+   "url": "https://ai.smritajaindesign.com/work/npz",
    "summary": "Immigration-law platform where a conversational assistant runs client intake and attorneys work from a desktop workspace.",
    "status": "verified",
    "via": "Own site"
@@ -785,7 +785,13 @@
    "url": "https://craftwords.us/",
    "summary": "Bedtime storytelling experience where families choose words and AI generates a story to read or listen to.",
    "status": "verified",
-   "via": "Own site"
+   "via": "Own site",
+   "links": [
+    {
+     "label": "Case study",
+     "url": "https://ai.smritajaindesign.com/work/craft-words"
+    }
+   ]
   },
   {
    "id": "cs-four-seasons",
@@ -796,7 +802,7 @@
    "source": "Case study",
    "kind": "Founding product designer · MRM",
    "date": "2022",
-   "url": "https://ai.smritajaindesign.com/",
+   "url": "https://ai.smritajaindesign.com/work/four-seasons-yachts",
    "summary": "First self-service booking flow for yacht suites, including holds and deposits; the work won an Effie Silver in 2025.",
    "status": "verified",
    "via": "Own site"
@@ -810,7 +816,7 @@
    "source": "Case study",
    "kind": "Healthcare",
    "date": "2022",
-   "url": "https://ai.smritajaindesign.com/",
+   "url": "https://ai.smritajaindesign.com/work/astrazeneca",
    "summary": "Desktop tool guiding an oncologist and lung cancer patient through one shared treatment decision.",
    "status": "verified",
    "via": "Own site"
@@ -824,7 +830,7 @@
    "source": "Case study",
    "kind": "Mobile · AR",
    "date": "2026",
-   "url": "https://ai.smritajaindesign.com/",
+   "url": "https://ai.smritajaindesign.com/work/kilmer",
    "summary": "Mobile app bringing WWII Camp Kilmer history to campus through an AR lens, audio tours and an archive.",
    "status": "verified",
    "via": "Own site"
@@ -838,7 +844,7 @@
    "source": "Case study",
    "kind": "Design system",
    "date": "2021",
-   "url": "https://ai.smritajaindesign.com/",
+   "url": "https://ai.smritajaindesign.com/work/coca-cola",
    "summary": "Experiences in a shared system that unifies content, journeys and interaction patterns across brands.",
    "status": "verified",
    "via": "Own site"
@@ -852,7 +858,7 @@
    "source": "Case study",
    "kind": "Web · AR/VR",
    "date": "2021",
-   "url": "https://ai.smritajaindesign.com/",
+   "url": "https://ai.smritajaindesign.com/work/usps",
    "summary": "Restructured navigation and architecture, searchable tags, microsites and AR/VR experiences.",
    "status": "verified",
    "via": "Own site"
@@ -866,7 +872,7 @@
    "source": "Case study",
    "kind": "Enterprise",
    "date": "2020",
-   "url": "https://ai.smritajaindesign.com/",
+   "url": "https://ai.smritajaindesign.com/work/ey",
    "summary": "Tax-data workflows and dashboards bringing key tax functions into one product.",
    "status": "verified",
    "via": "Own site"
