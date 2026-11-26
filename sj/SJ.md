@@ -51,7 +51,12 @@ Smrita Rani Borah, Payal Jain, and other designers or artists named Jain. Unrela
      selection to present, not a competition.
    - Label paid or contributor content as the outlet labels it ("Contributor feature").
    - No platform or tool names in anything public (no names of AI assistants or hosts).
-6. **Never publish:** birth date, phone numbers, home address, family members' details,
+6. **Never publish anything sexual, explicit or pornographic, and nothing negative,
+   abusive, insulting, gossipy or mocking that people say about Smrita or TAG** — even
+   if it is public and real. Those go only into the private watch report (section 3).
+   The archive holds only her own work, recognition, appearances and neutral factual
+   coverage. When unsure, leave it out and mention it privately.
+   **Also never publish:** birth date, phone numbers, home address, family members' details,
    health, finances, or anything about other private people. Do not copy her photos or
    anyone's images into the repo.
 7. **Build and check.** `python3 sj/build.py --check`, then `python3 sj/build.py`.
