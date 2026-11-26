@@ -132,6 +132,7 @@ def entry_html(e, links, today, show_cats=True, cat_labels=None):
 
 
 ARCHIVE_CSS = """
+@media(min-width:761px){.sidebar{justify-content:flex-start}.side-portrait{width:112px;height:112px}}
 .ar-hero{padding-top:64px;padding-bottom:28px}.ar-hero p{max-width:760px;font-size:17px}
 .stats{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 6px}.stat{background:var(--pale);border:1px solid #eadce3;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;color:#78234f}
 .layout{display:grid;grid-template-columns:1fr 280px;gap:40px;align-items:start}
